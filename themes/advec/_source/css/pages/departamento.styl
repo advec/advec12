@@ -1,0 +1,74 @@
+//
+// Page - Departamentos
+//
+// ==================================================
+
+.header-departamentos__section
+  height 35vh
+  color $white
+  text-align center
+  display flex
+  justify-content center
+  align-items center
+  overflow hidden
+  background-image url('/assets/images/back/section_departamentos.png')
+  background-size cover
+  background-position center center
+  background-repeat no-repeat
+
+  .section__inner-wrap
+    width 100%
+    flex-flow column
+
+    .inner_wrap__block
+      display flex
+      justify-content center
+      align-items center
+      flex-flow column
+
+      .block__text
+        margin-top 50px
+
+.list-departamentos__section
+  width 100%
+  display flex
+  justify-content center
+  align-items center
+
+  .section__list
+    width 100%
+    display flex
+    flex-flow row
+    flex-wrap wrap
+    justify-content center
+    align-items center
+    flex-grow 1
+
+    .list__item
+      cursor pointer
+      width 50%
+      height 25vh
+      display flex
+      justify-content center
+      align-items center
+      background-color $darker-gray
+      color $white
+      text-align center
+      border none !important
+      overflow hidden
+
+      &:hover
+        img
+          transition: all .2s
+          transform scale(1.1)
+
+      img
+        min-width 35em
+        display block
+
+      p
+        z-index 1
+        position absolute
+
+      &:last-child
+        width 100%

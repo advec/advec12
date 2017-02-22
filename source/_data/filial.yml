@@ -1,0 +1,22 @@
+# Rio de Janeiro
+- id: "avmeriti"
+  nome: "Av. Meriti"
+  pastor:
+    nome: "Pr. Jair Souza"
+    foto: ""
+  endereco: "Av. Meriti, 3.633 - Cordovil - Rio de Janeiro - RJ"
+  telefone: "(21) 3301-7065"
+  link: "/filiais/avmeriti"
+  facebook: "..."
+
+- id: "bangu"
+  nome: "Bangu"
+  pastor:
+    nome: "Pr. Marcelo Aguiar de Lima"
+    foto: ""
+  endereco: "Praça da Fé, 3 - Bangu – Rio de Janeiro – RJ"
+  telefone: "(21) 3462-8791"
+  link: "/filiais/bangu"
+  facebook: "..."
+  
+# São Paulo

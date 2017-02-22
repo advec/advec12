@@ -1,0 +1,55 @@
+//
+// Page - Filiais
+//
+// ==================================================
+
+.filial__section
+  height 35vh
+  color $white
+  text-align center
+  display flex
+  justify-content center
+  align-items center
+  overflow hidden
+  background-image url('/assets/images/filial.png')
+  background-size cover
+  background-position center center
+  background-repeat no-repeat
+
+  .section__inner-wrap
+    width 100%
+    flex-flow column
+
+    .inner-wrap__block
+      display flex
+      justify-content center
+      align-items center
+      flex-flow column
+
+.filial__section--lista
+  height auto
+  width 100%
+
+  .section--lista__inner-wrap
+    container()
+    .inner-wrap__title
+      width 100%
+      display block
+      margin-top 10em
+    .inner-wrap__estado
+      display flex
+      margin-top: 1em
+      justify-content space-between
+      flex-wrap wrap
+      .estado__block
+        box-sizing border-box
+        display flex
+        flex-flow column
+        justify-content center
+        align-items center
+        padding 5em
+        min-width 49%
+        height 5vh
+        box-shadow 0px 4px 11px 0px rgba(0,0,0,0.08)
+        text-align center
+        margin-bottom 2em

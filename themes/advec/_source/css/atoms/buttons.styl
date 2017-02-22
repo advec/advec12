@@ -1,0 +1,94 @@
+//
+// Buttom
+//
+// ==================================================
+
+.btn
+  display inline-block
+  padding 12px 25px
+  color $white
+  font-size $type-size-6
+  border-radius $buttom-radius
+  font-weight 500 !important
+  text-align center
+  text-decoration none
+  border 0 !important
+  cursor pointer
+  box-shadow 0px 14px 78px 0px rgba(0,0,0,0.26)
+
+  &:hover
+    opacity .8
+
+  &--icon
+    display flex
+    flex-flow row
+    align-items center
+    justify-content center
+    line-height 1
+
+    .fa-hand-paper-o
+      font-size 1.4em !important
+      margin-right 10px
+
+  // color: inverse
+  &--inverse
+    color: $gray !important
+    border 1px solid $gray-light !important
+    background-color #ffffff
+
+    &:hover
+      color $white !important
+      border-color $gray
+
+  // color: light outline
+  &--light-outline
+    box-shadow 0px 0px 0px 2px $white inset
+    color $white
+
+    &:hover
+      background-color $white
+      color $gray-light
+
+  // color: green
+  &--green
+    box-shadow 0px
+    background-color $green
+    color $white
+
+    &:hover
+      opacity .8
+
+    &--border
+      box-shadow 0px 0px 0px 2px $green inset
+      color $green !important
+
+      &:hover
+        background-color $green
+        color $white !important
+
+  // color: red
+  &--red
+    box-shadow 0px
+    background-color $red
+    color $white
+
+    &:hover
+      opacity .8
+
+    &--border
+      box-shadow 0px 0px 0px 2px $red inset
+      color: $red !important
+
+      &:hover
+        background-color $red
+        color: $white !important
+
+  // color: white
+  &--white
+    box-shadow 0px 0px 0px 2px #ffffff inset
+    color $white
+
+    &:hover
+      opacity 1
+      background-color $white
+      color $gray-darker
