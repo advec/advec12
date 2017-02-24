@@ -2,7 +2,7 @@
 Site inspirado por Deus, e criado pela **LIUG** www.liug.co.
 
 Workflow
-+ Nodee
++ Node
 + Npm
 + Hexo
 + Gulp
