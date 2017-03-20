@@ -10,12 +10,25 @@ html
   -ms-text-size-adjust 100% // 2
   -webkit-text-size-adjust 100% // 2
 
+  box-sizing border-box
+  background-color $background-color
+  font-size 16px
+
+  -webkit-text-size-adjust 100%
+  -ms-text-size-adjust 100%
+
 /**
  * Remove the margin in all browsers (opinionated).
  */
 
 body
   margin 0
+
+/* Selected elements */
+
+selection
+  color #fff
+  background #000
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -49,6 +62,8 @@ canvas,
 progress,
 video
   display inline-block
+  *display inline
+  *zoom 1
 
 /**
  * Add the correct display in iOS 4-7.
@@ -133,28 +148,12 @@ dfn
   font-style italic
 
 /**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1
-  font-size 2em
-  margin 0.67em 0
-
-/**
  * Add the correct background and color in IE 9-.
  */
 
 mark
   background-color #ff0
   color #000
-
-/**
- * Add the correct font size in all browsers.
- */
-
-small
-  font-size 80%
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -235,8 +234,9 @@ button,
 input,
 select,
 textarea
-  font inherit // 1
+  font-size 100% // 1
   margin 0 // 2
+  vertical-align middle
 
 /**
  * Restore the font weight unset by previous rule.
@@ -326,6 +326,7 @@ legend
 
 textarea
   overflow auto
+  vertical-align top // readability and alignment cross-browser
 
 /**
  * 1. Add the correct box sizing in IE 10-.

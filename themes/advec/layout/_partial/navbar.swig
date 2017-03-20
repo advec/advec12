@@ -141,12 +141,10 @@
 
 <div class="megamenu">
   <div class="megamenu__flex">
-    <a href="javascript:void(0)" class="btn btn--white">Fechar</a>
   	<div class="megamenu__flex__flex-inner-wrap">
   		<ul class="navlist">
   			<li><h3>Sobre nós.</h3>
   			<ul>
-  				<li><p><a href="/historia/">1959 à 2017</a></p></li>
   				<li><p><a href="/lideranca/">Liderança</a></p></li>
           <li><p><a href="/pr-jose-santos/">Somos Um</a></p></li>
   				<li><p><a href="/pr-jose-santos/">Pr. José Santos</a></p></li>
@@ -156,8 +154,6 @@
   			<ul>
   				<li><p><a href="/jesus/">Jesus</a></p></li>
   				<li><p><a href="/primeiros-passos/">Primeiros Passos</a></p></li>
-          <li><p><a href="/primeiros-passos/">Departamentos</a></p></li>
-  				<li><p><a href="/batismo/">Onde estamos</a></p></li>
   			</ul>
   			</li>
   			<li><h3>Eu faço parte.</h3>

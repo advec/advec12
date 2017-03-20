@@ -1,4 +1,4 @@
-<div class="footer">
+<footer class="footer">
     <div class="footer__container">
         <div class="footer__container__row">
             <div class="footer__container__row__local">
@@ -16,10 +16,10 @@
         <div class="footer__container__row--copyright">
             <span>ADVEC @ Todos os direitos reservados</span>
             <span>Tel: (21) 2187-7070 - De segunda a sexta das 9h às 18h</span>
-            <span> <a href="mailto:secretaria@advec.org">secretaria@advec.org</a></span>
+            <span><a href="mailto:secretaria@advec.org">secretaria@advec.org</a></span>
         </div>
     </div>
-</div>
+</footer>
 
 <!-- Application.js -->
 {{ js('js/application') }}

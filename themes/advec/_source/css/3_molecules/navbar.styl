@@ -1,0 +1,132 @@
+//
+// Header
+//
+// ==================================================
+
+.navbar
+  transition 0.2s cubic-bezier(0.36, 0.66, 0.04, 1)
+  background-image linear-gradient(rgba(0,0,0,.3),transparent)
+  height 110px
+  display flex
+  flex-flow row
+  justify-content center
+  align-items center
+  width 100%
+  top 0
+  position absolute
+  z-index 3
+
+  &__container
+    container()
+
+    &__col
+      display flex
+      align-items center
+      flex-flow row
+      justify-content space-between !important
+
+      &__logo
+        width 185px
+        +below('xs')
+          width 9rem
+
+      &__navbar
+        align-items center
+
+        &__items
+          display flex
+          justify-content center
+          align-items center
+
+          a
+            &.aovivo
+              hidden(xs)
+
+            &:last-child
+              margin-left 10px
+
+          ul
+            display flex
+            justify-content flex-end
+            padding 0
+            margin 0
+            hidden('md')
+
+            li
+              text-align center
+              margin-right 45px
+              transition 0.3s all
+
+              &:hover
+                opacity 1 !important
+
+              a
+                color #fff
+                font-size .9em
+                padding-top 20px
+                padding-bottom 20px
+                font-weight 300
+
+/* menu hamburguer nav */
+
+.megamenu
+  display none
+  position fixed
+  height 100%
+  top 0
+  width 100%
+  color #ffffff !important
+  background linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.69) 100%)
+  z-index: 2
+  overflow auto !important
+
+  &__flex
+    display flex
+    justify-content center
+    align-items center
+    flex-flow column
+    overflow auto !important
+    width 100%
+
+    .btn
+      position absolute
+      top 30px
+      right 30px
+
+    &__flex-inner-wrap
+      display block
+      width 83%
+
+      &:last-child
+        margin-top 5em
+
+      &__container
+        display flex
+        justify-content space-between
+        align-items center
+        flex-flow row
+
+        &__block
+          width 24%
+          background-color $gray-darker
+          padding 5em 3em
+
+          p
+            font-size 1.5em !important
+            color #ffffff
+
+      ul
+        &.navlist
+          display flex
+          justify-content space-between
+          width 100%
+          padding 0
+          margin 0
+
+          li
+            font-size 20px
+            margin-top 12px !important
+
+            a
+            	display block
+              color #ffffff

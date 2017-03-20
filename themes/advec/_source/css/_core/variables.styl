@@ -67,29 +67,6 @@ $space-gutter  = $space
 
 $header-height = 7rem
 
-
-//
-// 3. Media Queries
-// --------------------------------------------------
-
-$screen-xs   = 520px  // Extra small screen / phone
-$screen-sm   = 760px  // Small screen / tablet
-$screen-md   = 990px  // Medium screen / desktop
-$screen-lg   = 1200px // Large screen / wide desktop
-$screen-xlg  = 1400px // Extra Large screen / wide desktop
-$screen-xxlg = 1900px // Extra Large screen / wide desktop
-
-// Rupture Settings
-rupture.mobile-cutoff  = $screen-xs
-rupture.tablet-cutoff  = $screen-sm
-rupture.desktop-cutoff = $screen-lg
-rupture.hd-cutoff      = $screen-xxlg
-
-rupture.scale          = 0 $screen-xs $screen-sm $screen-md $screen-lg $screen-xlg $screen-xxlg
-rupture.scale-names    = '0' 'xs' 'sm' 'md' 'lg' 'xlg' 'hd'
-rupture.anti-overlap   = -1px
-
-
 //
 // 4. Typography
 // --------------------------------------------------
@@ -97,24 +74,18 @@ rupture.anti-overlap   = -1px
 $doc-font-size        = 16
 
 /* type scale */
-$type-size-1   = 3.5em  // ~45px
-$type-size-2   = 3em  // ~31.248px
-$type-size-3   = 2.441em  // ~25.008px
-$type-size-4   = 2em   // ~20px
-$type-size-5   = 1em      // ~16px
-$type-size-6   = .81em   // ~12px
-$type-size-7   = 0.6875em // ~11px
-$type-size-8   = 0.625em  // ~10px
-
-//
-// 5. Grids
-// --------------------------------------------------
-
-@lost gutter 0
-@lost flexbox flex
+$h1-size = 3.5em
+$h2-size   = 2.8rem
+$type-size-3   = 2.441em
+$type-size-4   = 2em
+$type-size-5   = 1em
+$type-size-6   = .81em
+$type-size-7   = 0.6875em
+$type-size-8   = 0.625em
 
 //
 // 5. Others
 // --------------------------------------------------
 
 $buttom-radius = 100px
+$widthContainer = 85%

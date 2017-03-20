@@ -128,5 +128,40 @@ container()
   max-width 85%
   min-width 85%
 
+flex(x = '', y = '', z = '')
+
+  display flex
+
+  if(z == col)
+    flex-direction column
+
+  if(z == row)
+    flex-direction row
+
+  // Center
+  if(x == center)
+    justify-content center
+
+  if(y == center)
+    align-items center
+
+  // Left
+  if(x == up)
+    justify-content flex-start
+
+  if(y == left)
+    align-items flex-start
+
+  // Right
+  if(x == down)
+    justify-content flex-end
+
+  if(y == right)
+    align-items flex-end
+
+  // Space Between
+  if(x == between)
+    justify-content space-between
+
 @alias
   bgImage background-image

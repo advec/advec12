@@ -3,9 +3,14 @@ $(document).ready(function(){
 	//initialize swiper when document ready
 	var swiper = new Swiper('.swiper-container', {
 		pagination: '.swiper-pagination',
+		paginationClickable: true,
+		effect: 'fade',
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     slidesPerView: 1,
+		centeredSlides: true,
+    autoplay: 3200,
+    autoplayDisableOnInteraction: false,
 		grabCursor: true
   });
 
@@ -18,7 +23,7 @@ $(document).ready(function(){
   });
 
 	$(".btn-menu").click(function(){
-			$(".megamenu").fadeToggle(200);
+			$('.megamenu').fadeIn().css('display', 'flex');
 			$('body').css('overflow', 'hidden');
 	});
 
@@ -38,4 +43,15 @@ $(document).ready(function(){
 	  closeBtnInside: true
 	});
 
+});
+
+var $ = document;
+var btnMenu = $.querySelector(".btn-menu");
+
+btnMenu.addEventListener("click", function() {
+	if(btnMenu.textContent == "Menu") {
+		btnMenu.textContent = "Fechar";
+	} else {
+		btnMenu.textContent = "Menu";
+	}
 });

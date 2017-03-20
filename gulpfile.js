@@ -4,6 +4,7 @@ const gulp = require('gulp');
 const stylus = require('gulp-stylus');
 const poststylus = require('poststylus');
 const rupture = require('rupture');
+const gcmq = require('gulp-group-css-media-queries');
 const lost = require('lost');
 const pxtorem = require('postcss-pxtorem');
 const uglify = require('gulp-uglify');
@@ -14,6 +15,8 @@ const cssnano = require('gulp-cssnano');
 const autoprefixer = require('autoprefixer');
 const browserSync = require('browser-sync');
 const hexo = require('hexo');
+const imagemin = require('gulp-imagemin');
+const pngquant = require('imagemin-pngquant');
 const cp = require('child_process');
 const clean = require('gulp-clean');
 
@@ -39,9 +42,10 @@ gulp.task('css', () => {
   return gulp.src(srcPaths.styl)
     .pipe(plumber())
     .pipe(stylus({
-      use: [rupture(), poststylus([lost(), pxtorem(), rucksack({ autoprefixer: true })])],
+      use: [rupture(), poststylus([lost(), rucksack({ autoprefixer: true })])],
       compress: false
     }))
+    .pipe(gcmq())
     .pipe(concat('application.css'))
     .pipe(cssnano({ mergeRules: false, zindex: false }))
     .pipe(gulp.dest(buildPaths.css))
@@ -54,6 +58,15 @@ gulp.task('js', () => {
     .pipe(concat('application.js'))
     .pipe(uglify())
     .pipe(gulp.dest(buildPaths.js))
+});
+
+gulp.task('img', function () {
+    return gulp.src('imagem/*')
+        .pipe(imagemin({
+            progressive: true,
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest('imagemin-img'));
 });
 
 gulp.task('clean', function() {

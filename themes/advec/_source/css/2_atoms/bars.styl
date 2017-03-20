@@ -1,0 +1,30 @@
+//
+// Bar
+//
+// ==================================================
+
+.bar
+  width 100%
+  flex(center, center, col)
+  height auto
+  padding-top 25px
+  padding-bottom 25px
+  background #0EA9D6
+  +above('sm')
+    padding-top 32px
+    padding-bottom 32px
+
+  &__container
+    flex(between, center, col)
+    width 85%
+    max-width 610px
+    text-align center
+    +above('sm')
+      text-align left
+      flex(between, center, row)
+
+    &__title
+      color white
+      margin-bottom 15px
+      +above('sm')
+        margin-bottom 0px
