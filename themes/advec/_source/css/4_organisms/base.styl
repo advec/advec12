@@ -13,41 +13,35 @@ body
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow hidden
 
-h1, h2, h3, h4, h5, h6
-  letter-spacing -0.02em
+h1
+h2
+h3
+h4
+h5
+h6
+  padding 0
   margin 0
   line-height 0.9em
+  letter-spacing -0.02em
   font-weight bold
-  padding 0
 
 h1
-  margin-top 0
-  font-size responsive
-  min-font-size: 3rem
-  max-font-size: $h1-size
+  font-responsive($h1-size)
 
 h2
-  font-size responsive
-  min-font-size: 1.8rem
-  max-font-size: $h2-size
+  font-responsive($h2-size)
 
 h3
-  font-size $type-size-4
+  font-responsive($h3-size)
 
 h4
-  font-size $type-size-5
+  font-responsive($h4-size)
 
 h5
-  font-size $type-size-6
-
-h6
-  font-size $type-size-7
-
-small, .small
-  font-size $type-size-6
+  font-responsive($h5-size)
 
 p
-  font-size responsive
+  font-responsive($p-size)
   font-weight 300
   letter-spacing .5px
   line-height 25px

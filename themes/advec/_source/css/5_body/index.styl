@@ -51,8 +51,6 @@
     &__col
       &__text
         margin-bottom 30px
-        p
-          font-size: responsive 19px 21px
 
       &__title
         padding-top 1.5em
@@ -78,13 +76,15 @@
       width 100%
       height 100vh
 
+      .swiper-pagination-bullet-active
+        background-color $white !important
+
       .swiper-button-prev
         left 0
       .swiper-button-next
         right 0
       .swiper-button-prev,
       .swiper-button-next
-        display flex
         justify-content center
         align-items center
         background-color rgba(0,0,0,1)
@@ -94,6 +94,9 @@
         background-image none
         transition all .4s ease-in-out
         display none
+        +above('sm')
+          display flex
+
 
         &:hover
           opacity .8

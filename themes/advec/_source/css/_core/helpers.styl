@@ -163,5 +163,13 @@ flex(x = '', y = '', z = '')
   if(x == between)
     justify-content space-between
 
+font-responsive(max)
+  min = max - 28.56%
+  font-size responsive
+  min-font-size min rem
+  max-font-size max
+  lower-font-range 420px
+  upper-font-range 1980px
+
 @alias
   bgImage background-image

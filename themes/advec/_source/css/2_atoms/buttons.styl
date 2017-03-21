@@ -7,7 +7,7 @@
   display inline-block
   padding 12px 25px
   color $white
-  font-size $type-size-6
+  font-size $btn-size
   border-radius $buttom-radius
   font-weight 500 !important
   text-align center
@@ -15,16 +15,17 @@
   border 0 !important
   cursor pointer
   box-shadow 0px 4px 18px 0px rgba(0,0,0,0.1)
+  +above('sm')
+    &:hover
+      box-shadow none
+      opacity .8
 
-  &:hover
-    box-shadow none
-    opacity .8
+  &--active
+    background-color $white
+    color #000
 
   &--icon
-    display flex
-    flex-flow row
-    align-items center
-    justify-content center
+    flex(center, center, row)
     line-height 1
 
     .fa-hand-paper-o
@@ -88,8 +89,8 @@
   &--white
     box-shadow 0px 0px 0px 2px #ffffff inset
     color $white
-
-    &:hover
-      opacity 1
-      background-color $white
-      color $gray-darker
+    +above('sm')
+      &:hover
+        opacity 1
+        background-color $white
+        color $gray-darker

@@ -22,17 +22,6 @@ $(document).ready(function(){
     $(".navbar__container__col__navbar__items ul li").css("opacity", "1");
   });
 
-	$(".btn-menu").click(function(){
-			$('.megamenu').fadeIn().css('display', 'flex');
-			$('body').css('overflow', 'hidden');
-	});
-
-	$('.megamenu').on('click', function(){
-	    $(".megamenu").fadeToggle(200);
-			$('body').css('overflow', 'auto');
-	    open = false;
-	});
-
 	$('.btn-pray').magnificPopup({
 	  removalDelay: 300,
 	  mainClass: 'mfp-fade',
@@ -43,15 +32,4 @@ $(document).ready(function(){
 	  closeBtnInside: true
 	});
 
-});
-
-var $ = document;
-var btnMenu = $.querySelector(".btn-menu");
-
-btnMenu.addEventListener("click", function() {
-	if(btnMenu.textContent == "Menu") {
-		btnMenu.textContent = "Fechar";
-	} else {
-		btnMenu.textContent = "Menu";
-	}
 });

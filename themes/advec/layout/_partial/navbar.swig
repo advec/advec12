@@ -140,44 +140,33 @@
 </div>
 
 <div class="megamenu">
-  <div class="megamenu__flex">
-  	<div class="megamenu__flex__flex-inner-wrap">
-  		<ul class="navlist">
-  			<li><h3>Sobre nós.</h3>
-  			<ul>
-  				<li><p><a href="/lideranca/">Liderança</a></p></li>
-          <li><p><a href="/pr-jose-santos/">Somos Um</a></p></li>
-  				<li><p><a href="/pr-jose-santos/">Pr. José Santos</a></p></li>
-  			</ul>
+  <div class="megamenu__container">
+  	<div class="megamenu__container__block">
+  		<ul class="megamenu__container__block__list">
+  			<li class="megamenu__container__block__list__item">
+			  	<h3>Sobre nós.</h3>
+				<ul>
+					<li><p><a href="/lideranca/">Liderança</a></p></li>
+					<li><p><a href="/pr-jose-santos/">Somos Um</a></p></li>
+					<li><p><a href="/pr-jose-santos/">Pr. José Santos</a></p></li>
+				</ul>
   			</li>
-        <li><h3>De braços abertos.</h3>
-  			<ul>
-  				<li><p><a href="/jesus/">Jesus</a></p></li>
-  				<li><p><a href="/primeiros-passos/">Primeiros Passos</a></p></li>
-  			</ul>
+        	<li class="megamenu__container__block__list__item">
+				<h3>De braços abertos.</h3>
+				<ul>
+					<li><p><a href="/jesus/">Jesus</a></p></li>
+					<li><p><a href="/primeiros-passos/">Primeiros Passos</a></p></li>
+				</ul>
   			</li>
-  			<li><h3>Eu faço parte.</h3>
-  			<ul>
-  				<li><p><a href="/expansao/">Expansão</a></p></li>
-  				<li><p><a href="/trabalho-social/">Trabalho Social</a></p></li>
-  				<li><p><a href="/voluntario/">Programa Voluntário</a></p></li>
-  			</ul>
+  			<li class="megamenu__container__block__list__item">
+			  	<h3>Eu faço parte.</h3>
+				<ul>
+					<li><p><a href="/expansao/">Expansão</a></p></li>
+					<li><p><a href="/trabalho-social/">Trabalho Social</a></p></li>
+					<li><p><a href="/voluntario/">Programa Voluntário</a></p></li>
+				</ul>
   			</li>
   		</ul>
-  	</div>
-    <div class="megamenu__flex__flex-inner-wrap">
-  		<div class="megamenu__flex__flex-inner-wrap__container">
-        <div class="megamenu__flex__flex-inner-wrap__container__block">
-          <p>Dízimos<br>& Ofertas</p>
-          <img src="">
-        </div>
-        <div class="megamenu__flex__flex-inner-wrap__container__block">
-          <p>Batismo<br>2017</p>
-        </div>
-        <div class="megamenu__flex__flex-inner-wrap__container__block">
-          <p>Ano de fazer<br>a diferença</p>
-        </div>
-  		</div>
   	</div>
   </div>
 </div>
