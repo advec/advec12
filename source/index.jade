@@ -33,21 +33,24 @@ section.slider
               video(autoplay="autoplay" loop="loop" muted="muted" src="/assets/videos/bg-home-1.mp4")
       
       .swiper-pagination
-      .swiper-button-prev <
-      .swiper-button-next >
+      .swiper-button-prev
+        i.icon--chevron-left
+      .swiper-button-next
+        i.icon--chevron-right
 
 //
-// Batismo
+// EBD
 // --------------------------------------------------
-section.batismo
-  .batismo__container
-    .batismo__container__col
-      .batismo__container__col__title
-        h2 Sou batizado, seja um.
-      .batismo__container__col__text
-        p Esse ano teremos 4 batismos. Vamos fazer a diferença, vencendo mais esse desafio.
-      .batismo__container__col__button
-        a(href="/batismo/").btn.btn--white Batismo 2017
+section.ebd
+  .ebd__container
+    .ebd__container__col
+      .ebd__container__col__title
+        h2 Escola Bíblica Dominical
+      .ebd__container__col__text
+        p Traga sua família para a maior escola do mundo. Aprenda e se proteja, você e sua família.
+      .ebd__container__col__button
+        a(href="/batismo/").btn.btn--white Programação
+  img(src="/assets/images/back/section/ebd.png").section-background
 
 //
 // Departamentos
@@ -61,6 +64,7 @@ section.departamento
         p Você com certeza tem um espaço aqui dentro. Temos diversos departamentos, para todo tipo de idade e para todos que querem trabalhar no Reino.
       .departamento__container__col__button
         a(href="/departamentos/").btn.btn--white Nossos departamentos
+  img(src="/assets/images/back/section/amareservir.png").section-background
 
 //
 // Bar | Recadastro membros
@@ -83,6 +87,9 @@ section.oracao
       .oracao__container__col__text
           p Fique a vontade para fazer seu pedido. Nós vamos orar por você.
       .oracao__container__col__button
-        a(href="#").btn.btn--red.btn-pray Enviar pedido de oração
+        a(href="#").btn.btn--red.btn-pray
+          i.icon--hand-pray
+          | Fazer pedido de oração
+
       // #--pop__gray.section__popup.mfp-hide
         // script(type="text/javascript" src="https://advec.formstack.com/forms/js.php/fale_conosco")

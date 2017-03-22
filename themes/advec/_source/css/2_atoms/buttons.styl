@@ -14,11 +14,16 @@
   text-decoration none
   border 0 !important
   cursor pointer
-  box-shadow 0px 4px 18px 0px rgba(0,0,0,0.1)
+  &:active
+    transform translateY(7%)
+
   +above('sm')
     &:hover
-      box-shadow none
-      opacity .8
+      box-shadow 0px 6px 28px 0px rgba(0,0,0,0.1)
+
+    &:active
+      box-shadow 0px 4px 18px 0px rgba(0,0,0,0)
+      transform translateY(4%)
 
   &--active
     background-color $white

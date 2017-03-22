@@ -12,6 +12,12 @@
                 <p class="twitter"><a href="http://adv.ec/twitterofc" target="_blank">Twitter</a></p>
                 <p class="youtube"><a href="http://adv.ec/youtubeofc" target="_blank">Youtube</a></p>
             </div>
+            <div class="footer__container__row__icons">
+                <i class="icon--facebook"></i>
+                <i class="icon--instagram"></i>
+                <i class="icon--twitter"></i>
+                <i class="icon--youtube"></i>
+            </div>
         </div>
         <div class="footer__container__row--copyright">
             <span>ADVEC @ Todos os direitos reservados</span>

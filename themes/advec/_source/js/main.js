@@ -11,7 +11,8 @@ $(document).ready(function(){
 		centeredSlides: true,
     autoplay: 3200,
     autoplayDisableOnInteraction: false,
-		grabCursor: true
+		grabCursor: true,
+		loop: true
   });
 
   $(".navbar__container__col__navbar__items ul").mouseenter(function() {

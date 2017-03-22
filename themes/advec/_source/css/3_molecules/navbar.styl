@@ -7,23 +7,17 @@
   transition 0.2s cubic-bezier(0.36, 0.66, 0.04, 1)
   background-image linear-gradient(rgba(0,0,0,.3),transparent)
   height 110px
-  display flex
-  flex-flow row
-  justify-content center
-  align-items center
+  flex(center, center, row)
   width 100%
   top 0
   position absolute
   z-index 3
 
   &__container
-    container()
+    width $widthContainer
 
-    &__col
-      display flex
-      align-items center
-      flex-flow row
-      justify-content space-between !important
+    &__row
+      flex(between, center, row)
 
       &__logo
         width 185px
@@ -40,7 +34,9 @@
 
           a
             &.aovivo
-              hidden(xs)
+              display none
+              +above('xs')
+                display block
 
             &:last-child
               margin-left 10px
@@ -50,11 +46,13 @@
             justify-content flex-end
             padding 0
             margin 0
-            hidden('md')
+            display none
+            +above('xlg')
+              display flex
 
             li
               text-align center
-              margin-right 45px
+              margin-right 35px
               transition 0.3s all
 
               &:hover
@@ -70,47 +68,71 @@
 /* menu hamburguer nav */
 
 .megamenu
-  display none
+  display flex
   position fixed
   width 100%
   height 100%
-  overflow-y scroll
   top 0
   color #ffffff !important
-  background linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.65) 100%)
+  background linear-gradient(to bottom,  rgba(0,0,0,0.95) 0%,rgba(0,0,0,.75) 100%)
   z-index: 2
   justify-content center
+  transition all 1s cubic-bezier(0.7, -0.02, 0, 1)
+  transform translateY(-40%)
   opacity 0
-  transition all 2.5s ease-in-out
+    
+  +above('xlg')
+    height 100%
+    padding-bottom 5%
 
   &.appear
-    opacity 1 !important
+    opacity 1
+    transform translateY(0%) !important
 
   &__container
     width $widthContainer
 
     &__block
-      margin-top 110px
-      position relative
-      overflow hidden
-      overflow-y scroll
+      margin-top 130px
+      position fixed
+      overflow scroll
+      width 85%
       height 73%
+      +above('xlg')
+        overflow hidden
+        position relative
+        width 100%
 
       &__list
-          justify-content space-between
-          flex-direction column
-          height 100%
-          width 100%
-          padding 0
-          margin 0
-          position absolute
+        display flex
+        justify-content space-between
+        flex-direction column
+        height 100%
+        width 100%
+        padding 0
+        margin 0
+        position absolute
+        +above('sm')
+          flex-direction row
+          flex-wrap wrap
 
-          &__item
-            margin-top 45px
+        +above('xlg')
+          height auto
+          flex-direction row
+          position relative
 
-            &:first-child
-              margin-top 0px
+        &__item
+          margin-top 45px
+          +above('sm')
+            margin-right 50px
+            margin-top 0
 
-            ul
-              li
-                margin-top 20px
+          +above('xlg')
+            margin-right 0
+
+          &:first-child
+            margin-top 0px
+
+          ul
+            li
+              margin-top 20px

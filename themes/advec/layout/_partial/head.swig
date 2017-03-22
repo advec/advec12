@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <title>{{ config.title }}{% if page.title %} | {{ page.title }}{% else %} | Assembleia de Deus Vitória em Cristo{% endif %}</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <!-- Canonical links -->
   <link rel="canonical" href="{{ url }}">
   <!-- Icon -->
@@ -19,7 +19,12 @@
   <link rel="icon" type="image/png" href="{{ url_for('icon/favicon-96x96.png') }}" sizes="96x96">
   <link rel="icon" type="image/png" href="{{ url_for('icon/favicon-16x16.png') }}" sizes="16x16">
   <link rel="icon" type="image/png" href="{{ url_for('icon/favicon-32x32.png') }}" sizes="32x32">
-  <meta name="msapplication-TileColor" content="#2f83cd">
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#cc0000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#cc0000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#cc0000"> 
   <meta name="msapplication-TileImage" content="{{ url_for('icon/mstile-144x144.png') }}">
   <meta property="og:title" content="Assembleia de Deus Vitória e mCristo." />
   <meta property="og:type" content="article" />

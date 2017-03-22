@@ -1,8 +1,8 @@
 <!-- Header / Nav -->
 <div class="navbar">
     <div class="navbar__container">
-        <div class="navbar__container__col">
-            <div class="navbar__container__col__logo">
+        <div class="navbar__container__row">
+            <div class="navbar__container__row__logo">
                 <a href="/">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   	 viewBox="0 0 1496 383.4" style="enable-background:new 0 0 1496 383.4;" xml:space="preserve">
@@ -124,8 +124,8 @@
                   </svg>
                 </a>
             </div>
-            <div class="navbar__container__col__navbar">
-                <div class="navbar__container__col__navbar__items">
+            <div class="navbar__container__row__navbar">
+                <div class="navbar__container__row__navbar__items">
                     <ul>
                         {% for link in site.data.menu %}
                         <li><a href={{ url_for(link) }}>{{ loop.key }}</a></li>
@@ -139,16 +139,25 @@
     </div>
 </div>
 
-<div class="megamenu">
+<div class="megamenu" style="visibility: hidden">
   <div class="megamenu__container">
   	<div class="megamenu__container__block">
   		<ul class="megamenu__container__block__list">
   			<li class="megamenu__container__block__list__item">
 			  	<h3>Sobre nós.</h3>
 				<ul>
-					<li><p><a href="/lideranca/">Liderança</a></p></li>
-					<li><p><a href="/pr-jose-santos/">Somos Um</a></p></li>
+					<li><p><a href="/historia/">História</a></p></li>
 					<li><p><a href="/pr-jose-santos/">Pr. José Santos</a></p></li>
+					<li><p><a href="/lideranca/">Liderança</a></p></li>
+				</ul>
+  			</li>
+			<li class="megamenu__container__block__list__item">
+				<h3>Fique ligado.</h3>
+				<ul>
+					<li><p><a href="/filiais/">Filiais</a></p></li>
+					<li><p><a href="/programacao/">Programação</a></p></li>
+					<li><p><a href="/departamentos/">Departamentos</a></p></li>
+					<li><p><a href="/fale-conosco/">Fale Conosco</a></p></li>
 				</ul>
   			</li>
         	<li class="megamenu__container__block__list__item">
@@ -156,11 +165,13 @@
 				<ul>
 					<li><p><a href="/jesus/">Jesus</a></p></li>
 					<li><p><a href="/primeiros-passos/">Primeiros Passos</a></p></li>
+					<li><p><a href="/batismo/">Batismo</a></p></li>
 				</ul>
   			</li>
   			<li class="megamenu__container__block__list__item">
 			  	<h3>Eu faço parte.</h3>
 				<ul>
+					<li><p><a href="/dizimos-e-ofertas/">Dízimos e Ofertas</a></p></li>
 					<li><p><a href="/expansao/">Expansão</a></p></li>
 					<li><p><a href="/trabalho-social/">Trabalho Social</a></p></li>
 					<li><p><a href="/voluntario/">Programa Voluntário</a></p></li>
