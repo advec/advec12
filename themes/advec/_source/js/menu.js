@@ -23,12 +23,4 @@ btnMenu.addEventListener("click", function() {
         body.classList.remove("overflow--hidden");
     }
 
-});
-
-var ypos, image;
-
-window.addEventListener("scroll", function() {
-    ypos = window.pageYOffset;
-    s = sliderSection.style.opacity = 1 - ypos / 1000;
-    console.log(s);
-});   
+}); 

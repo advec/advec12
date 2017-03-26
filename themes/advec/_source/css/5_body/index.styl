@@ -13,153 +13,247 @@
 .slider
   height 100vh !important
   color $white
-  text-align center
+  text-align left
   display flex
   overflow hidden
 
-  &__container
+  .swiper-container
     width 100%
-    max-width 100%
+    height 100vh
 
-    .swiper-container
-      width 100%
+    .swiper-slide
+      flex(center, center, col)
+      background-size cover
+      background-repeat no-repeat
+      background-position center center
+
+    .swiper-block
+      flex(center, left, col)
+      width 85%
       height 100vh
+      z-index 1
+      +above('lg')
+        width 65%
 
-      .swiper-pagination-bullet-active
-        background-color $white !important
+      &:after
+        font-family FontAwesome
+        content "\f107"
+        font-size 1.3rem
+        font-style normal
+        font-weight normal
+        text-decoration inherit
+        position absolute
+        bottom 3.6em
+        color $red
 
-      .swiper-button-prev
-        left 0
-      .swiper-button-next
-        right 0
-      .swiper-button-prev,
-      .swiper-button-next
-        justify-content center
-        align-items center
-        background-color transparent
-        opacity .4
-        width 90px
-        height 52px
-        background-image none
-        transition all .4s ease-in-out
-        display none
-        font-size 2.1rem
-        +above('sm')
-          display flex
+      &__title
+        max-width 450px
+        margin-bottom 1em
 
+      &__text
+        margin-bottom 2.5em
 
-        &:hover
-          opacity .8
-
-      .swiper-slide
-        display flex
-        flex-flow column
-        justify-content center
-        align-items center
-        background-size cover
-        background-repeat no-repeat
-        background-position center center
-
-      .inner-wrap__block
-        display flex
-        justify-content center
-        align-items center
-        flex-flow column
-        max-width 80%
+      &__video
+        position absolute
+        z-index -9999
         height 100vh
-        z-index 1
+        overflow hidden
+        top 0
+        left 0
+        right 0
+        bottom 0
 
-        .block__title,
-        .block__button
-          padding-top 1.5em
-          padding-bottom 1.5em
-
-        .block__text
-          width 70%
-
-        .block_button
-          .button__row
-            justify-content center
-
-            &:nth_child(1)
-              margin-right 15px
-
-        .section__video
-          position absolute
-          z-index -9999
-          height 100vh
-          overflow hidden
-          top 0
-          left 0
-          right 0
-          bottom 0
-
-          video
-            width auto
-            min-width 100%
-            min-height 100%
+        video
+          width auto
+          min-width 100%
+          min-height 100%
 
 //
 // 2. Section
 // -----------------------------------
 
-.ebd
-  background-color #000
-  height 100vh
-  +above('sm')
-    height 60vh
-
-.departamento
-  background-color #000
-  height 100vh
-  +above('sm')
-    height 60vh
-
-.oracao
-  background $white
-  height 60vh !important
-
-  &__container__col__title
-  &__container__col__text
-    color black !important
-
-  +above('sm')
-    height 40vh !important
-
-.ebd
-.departamento
-.oracao
-  display flex
-  align-items center
-  justify-content center
-  color $white
-  box-sizing border-box
-  overflow hidden
-  position relative
-
-  img
-    position absolute
-    z-index 1
-    min-width 100%
-    height auto
+.bemvindo
+  background white
+  flex(center, center, row)
+  padding-top 8em
+  padding-bottom 8em
 
   &__container
-    display flex
-    justify-content center
-    width 85%
-    max-width 500px
+    color $red
+    max-width 511px
+    text-align center
+    width 75%
+
+    &__text
+      &:after
+        display block
+        font-family FontAwesome
+        content "\f107"
+        font-style normal
+        font-weight 300
+        font-size 2rem
+        text-decoration inherit
+        margin-top 2em
+        color $red
+
+.ebd
+  height 100vh
+  box-sizing border-box
+  flex(center, center, col)
+  position relative
+  +above('sm')
+    height 65vh
+    flex(center, center, row)
+
+  &__background
+    height 35%
+    width 100%
+    background url("/assets/images/back/section/ebd.png")
+    background-size cover
+    background-position center center
+    +above('sm')
+      height 100%
+      order 2
+
+  &__block
+    background white
+    flex(center, center, row)
+    height 65%
+    width 100%
+    +above('sm')
+      height 100%
+      order 1
+
+    &__container
+      width 75%
+      height auto
+      position relative
+      z-index 0
+      +above('sm')
+        width 60%
+
+      &__col
+        &__title
+          color $red
+          margin-bottom 2em
+
+        &__text
+          margin-bottom 1em
+
+        &__button
+          text-align left
+          +above('sm')
+            text-align left
+
+.departamento
+  height 100vh
+  box-sizing border-box
+  flex(center, center, col)
+  position relative
+  +above('sm')
+    height 70vh
+    flex(center, center, row)
+
+  &__background
+    height 35%
+    width 100%
+    background url("/assets/images/back/section/amareservir.png")
+    background-size cover
+    background-position center center
+    +above('sm')
+      height 100%
+
+  &__block
+    background white
+    flex(center, center, row)
+    height 65%
+    width 100%
+    +above('sm')
+      height 100%
+
+    &__container
+      width 75%
+      height auto
+      position relative
+      z-index 0
+      +above('sm')
+        width 60%
+
+      &__col
+        &__title
+          color $red
+          margin-bottom 2em
+
+        &__text
+          margin-bottom 1em
+
+        &__button
+          text-align left
+          +above('sm')
+            text-align left
+
+.oracao
+  background white
+  box-sizing border-box
+  flex(center, center, col)
+  padding-bottom 3em
+  position relative
+  +above('sm')
+    flex(center, center, row)
+    padding-top 8em
+    padding-bottom 8em
+
+  &__container
+    width 75%
+    height auto
     position relative
-    z-index 2
+    z-index 0
 
     &__col
-      &__text
-        margin-bottom 30px
-
-      &__title
-        padding-top 1.5em
-        padding-bottom 1.5em
-
+      &__icon
       &__title
       &__text
       &__button
+        text-align left
+        +above('sm')
+          text-align center
+
+      &__title
+        color $red
+        margin-bottom 2em
+
+      &__button
+        padding-top 1em
+
+.useful
+  width 100%
+  height 100%
+  padding-top 3.5em
+  background rgba(252, 252, 252, 1)
+  border-top 1px solid #efefef
+  flex(center, center, row)
+
+  &__container
+    height 100%
+    width 100%
+    flex(center, center, row)
+
+    &__row
+      flex(center, center, col)
+      width 70%
+      +above('lg')
+        flex(between, center, row)
+
+      &__item
         text-align center
+        margin-bottom 4em
+        max-width 240px
+
+        h3
+          color $red
+          margin-bottom .7em
+
+        p
+          margin-bottom 1.4em
+
+

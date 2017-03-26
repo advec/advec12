@@ -5,76 +5,70 @@ layout: index
 // Swiper
 // --------------------------------------------------
 section.slider
-  div.slider__container
-    div.swiper-container
-      div.swiper-wrapper
-        div.swiper-slide
-          div.inner-wrap__block
-            div.section__container__col__title
-              h1 Somos Um.
-            div.section__container__col__text
-              p Somos Um em Cristo.
-            div.section__container__col__button
-              div.button__row
-                a(href="#").btn.btn--white Somos Um
-            div.section__video
-              video(autoplay="autoplay" loop="loop" muted="muted" src="/assets/videos/bg-home-1.mp4")
-      
-        div.swiper-slide
-          div.inner-wrap__block
-            div.section__container__col__title
-              h1 Teste.
-            div.section__container__col__text
-              p Somos Um em Cristo.
-            div.section__container__col__button
-              div.button__row
-                a(href="#").btn.btn--white Somos Um
-            div.section__video
-              video(autoplay="autoplay" loop="loop" muted="muted" src="/assets/videos/bg-home-1.mp4")
-      
-      .swiper-pagination
-      .swiper-button-prev
-        i.icon--chevron-left
-      .swiper-button-next
-        i.icon--chevron-right
+  .swiper-container
+    .swiper-wrapper
+      .swiper-slide
+        .swiper-block
+          .swiper-block__title
+            h1 Estamos no ano de Fazer a Diferença.
 
+          .swiper-block__video
+            video(autoplay="autoplay" loop="loop" muted="muted" src="/assets/videos/bg-ihome-1.mp4")
+
+    a(href="/live/").bar--aovivo
+      p 
+        | Estamos ao vivo, 
+        strong clique para assistir.
+
+//
+// Bem vindo
+// --------------------------------------------------
+section.bemvindo
+  .bemvindo__container
+    .bemvindo__container__text
+      h3 Seja bem vindo, sua presença nos enche de alegria e satisfação. Venha mais vezes! 
+      h3(style="margin-top: 1em") Acompanhe nossas programações e siga nossas redes sociais, mas saiba que nada substitui a sua presença. No Salmo 37.5, diz:
+      h3(style="margin-top: 1em") 
+        strong "Entrega o teu caminho ao Senhor, confia nele, e Ele tudo fará".
 //
 // EBD
 // --------------------------------------------------
 section.ebd
-  .ebd__container
-    .ebd__container__col
-      .ebd__container__col__title
-        h2 Escola Bíblica Dominical
-      .ebd__container__col__text
-        p Traga sua família para a maior escola do mundo. Aprenda e se proteja, você e sua família.
-      .ebd__container__col__button
-        a(href="/batismo/").btn.btn--white Programação
-  img(src="/assets/images/back/section/ebd.png").section-background
+  .ebd__background
+  .ebd__block
+    .ebd__block__container
+      .ebd__block__container__col
+        .ebd__block__container__col__title
+          h2 Escola Bíblica Dominical.
+        .ebd__block__container__col__text
+          p Traga sua família para a maior escola do mundo. Aprenda e se proteja, você e sua família.
+        .ebd__block__container__col__button
+          a(href="/batismo/").btn.btn--black Programação
 
 //
 // Departamentos
 // --------------------------------------------------
 section.departamento
-  .departamento__container
-    .departamento__container__col
-      .departamento__container__col__title
-        h2 Amar e Servir.
-      .departamento__container__col__text
-        p Você com certeza tem um espaço aqui dentro. Temos diversos departamentos, para todo tipo de idade e para todos que querem trabalhar no Reino.
-      .departamento__container__col__button
-        a(href="/departamentos/").btn.btn--white Nossos departamentos
-  img(src="/assets/images/back/section/amareservir.png").section-background
+  .departamento__background
+  .departamento__block
+    .departamento__block__container
+      .departamento__block__container__col
+        .departamento__block__container__col__title
+          h2 Amar e Servir.
+        .departamento__block__container__col__text
+          p Você com certeza tem um espaço aqui dentro. Temos diversos departamentos, para todo tipo de idade e para todos que querem trabalhar no Reino.
+        .departamento__block__container__col__button
+          a(href="/departamentos/").btn.btn--black Nossos departamentos
 
 //
 // Bar | Recadastro membros
 // --------------------------------------------------
-.bar
-  .bar__container
-    .bar__container__title
-      h2 Você é membro?
-    .bar__container__button
-      a(href="#").btn.btn--white Recadastro de membros
+//.bar
+//  .bar__container
+//    .bar__container__title
+//      h3 Você é membro?
+//    .bar__container__button
+//     a(href="#").btn.btn--white Recadastro de membros
 
 //
 // Oração
@@ -87,9 +81,36 @@ section.oracao
       .oracao__container__col__text
           p Fique a vontade para fazer seu pedido. Nós vamos orar por você.
       .oracao__container__col__button
-        a(href="#").btn.btn--red.btn-pray
-          i.icon--hand-pray
+        a(href="#").btn.btn--black
           | Fazer pedido de oração
+
+      // #--pop__gray.section__popup.mfp-hide
+        // script(type="text/javascript" src="https://advec.formstack.com/forms/js.php/fale_conosco")
+
+//
+// Useful
+// --------------------------------------------------
+section.useful
+  .useful__container
+    .useful__container__row
+      .useful__container__row__item
+        h3 Aplicativo
+        p Faça o download do nosso aplicativo. Android e iOS.
+        a(href="#").btn.btn--black
+          | Download
+
+      .useful__container__row__item
+        h3 Newsletter
+        p Se inscreva e receba todas as novidades da nossa igreja.
+        a(href="/newsllater/").btn.btn--black
+          | Se inscrever
+
+      .useful__container__row__item
+        h3 Para membros
+        p Se você é membro, faça seu recadastramento.
+        a(href="/recadastramento/").btn.btn--black
+          | Recadastramento
+
 
       // #--pop__gray.section__popup.mfp-hide
         // script(type="text/javascript" src="https://advec.formstack.com/forms/js.php/fale_conosco")

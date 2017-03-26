@@ -3,19 +3,91 @@
 //
 // ==================================================
 
-.historia__section
-  background-image url('../assets/images/servico.png')
-  display flex
-  align-items center
-  justify-content center
-  color $white
-  height 100vh
-  background-attachment fixed
-  background-size cover
-  .section__inner-wrap
-    width 70%
-    margin-left auto
-    margin-right auto
-    .block__text
-      p
-        font-size responsive
+.historia-title
+    background white
+    margin-top 6.9em
+    height 86vh
+    box-sizing border-box
+    flex(center, center, col)
+    position relative
+    +above('sm')
+        height 65vh
+        flex(center, center, col)
+
+    &__background
+        height 40vh
+        width 100%
+        background url("/assets/images/back/section/historia.png")
+        background-size cover
+        background-position center center
+        +above('sm')
+            height 100%
+
+    &__block
+        background white
+        flex(center, up, row)
+        padding-top 3.6em
+        height 65%
+        max-width 800px
+        width 100%
+        +above('sm')
+            flex(center, center, row)
+            padding-top 4em
+            height 100%
+
+        &__container
+            width 75%
+            height auto
+            position relative
+            z-index 0
+            +above('sm')
+                width 60%
+                
+            &__col
+                &__title
+                    color $red
+                    margin-bottom 2em
+                    +above('sm')
+                        text-align center
+
+                &__text
+                    margin-bottom 1em
+                    +above('sm')
+                        text-align center
+
+                &__button
+                    text-align left
+                    +above('sm')
+                        text-align center
+    
+.historia-text
+    flex(center, center, row)
+    width 100%
+    margin-bottom 2em
+    overflow visible
+    +above('sm')
+        margin-bottom 7em
+        margin-top 8em
+
+    &__container
+        text-align left
+        width 75%
+        max-width 800px
+        position relative
+
+        &:after
+            display inline-block
+            font-family FontAwesome
+            content "\f10d"
+            font-style normal
+            font-weight normal
+            text-decoration inherit
+            font-size 8rem
+            color black
+            opacity .03
+            position absolute
+            top -76px
+            left -60px
+
+        p
+            margin-bottom 2em

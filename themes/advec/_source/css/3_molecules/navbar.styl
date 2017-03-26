@@ -5,7 +5,7 @@
 
 .navbar
   transition 0.2s cubic-bezier(0.36, 0.66, 0.04, 1)
-  background-image linear-gradient(rgba(0,0,0,.3),transparent)
+  background-image linear-gradient(to top, transparent 0%, rgba(0,0,0,.7) 100%)
   height 110px
   flex(center, center, row)
   width 100%
@@ -14,7 +14,7 @@
   z-index 3
 
   &__container
-    width $widthContainer
+    width 85%
 
     &__row
       flex(between, center, row)
@@ -23,6 +23,16 @@
         width 185px
         +below('xs')
           width 9rem
+
+        .st0
+          fill-rule evenodd
+          clip-rule evenodd
+
+        .st0
+        .st1
+        .st2
+        .st3 
+          fill #fff
 
       &__navbar
         align-items center
@@ -64,6 +74,35 @@
                 padding-top 20px
                 padding-bottom 20px
                 font-weight 300
+
+  &__white
+    background-image none
+    background-color $white
+
+    ul
+      li
+        a
+          color #000
+
+    .btn
+      &--active
+        background #000
+        color #fff !important
+
+      &--white
+        box-shadow 0px 0px 0px 2px #000 inset
+        color #000
+
+        &:hover
+          background #000
+          color #fff
+
+    .st0
+    .st1
+    .st2
+    .st3 
+      fill #000 !important
+
 
 /* menu hamburguer nav */
 
@@ -136,3 +175,18 @@
           ul
             li
               margin-top 20px
+
+              a
+                &:after
+                  font-family FontAwesome
+                  content "\f105"
+                  font-style normal
+                  font-weight normal
+                  text-decoration inherit
+                  margin-left 7px
+                  color red
+                  margin-left 10px
+
+  &__white
+    background linear-gradient(to bottom,  rgba(255,255,255,255.1) 0%,rgba(255,255,255,.9) 100%)
+    color #000 !important

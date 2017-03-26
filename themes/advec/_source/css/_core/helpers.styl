@@ -132,36 +132,38 @@ flex(x = '', y = '', z = '')
 
   display flex
 
+  // justify-content
+
+  if(x == center)
+    justify-content center
+
+  if(x == left)
+    justify-content flex-start
+  
+  if(x == right)
+    justify-content flex-end
+
+  if(x == between)
+    justify-content space-between
+
+  // align-items
+
+  if(y == center)
+    align-items center
+
+  if(y == left)
+    align-items flex-start
+
+  if(y == right)
+    align-items flex-end
+
+  // flex-direction
+
   if(z == col)
     flex-direction column
 
   if(z == row)
     flex-direction row
-
-  // Center
-  if(x == center)
-    justify-content center
-
-  if(y == center)
-    align-items center
-
-  // Left
-  if(x == up)
-    justify-content flex-start
-
-  if(y == left)
-    align-items flex-start
-
-  // Right
-  if(x == down)
-    justify-content flex-end
-
-  if(y == right)
-    align-items flex-end
-
-  // Space Between
-  if(x == between)
-    justify-content space-between
 
 font-responsive(max)
   min = max - 28.56%

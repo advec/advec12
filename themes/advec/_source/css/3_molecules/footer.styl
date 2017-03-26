@@ -6,13 +6,9 @@
 .footer
   width 100%
   height auto
-  background $white
+  background rgba(252, 252, 252, 1)
+  border-top 1px solid #efefef
   flex(center, center, col)
-
-  p
-    font-size 1.5em
-    letter-spacing -0.02em
-    line-height normal
 
   span
     font-weight 300
@@ -23,8 +19,8 @@
 
     &__row
       width 100%
-      margin-top 30px
-      margin-bottom 30px
+      margin-top 60px
+      margin-bottom 50px
       box-sizing border-box
       flex(between, center, col)
       +above('sm')
@@ -45,26 +41,30 @@
           display none
 
       &__local
+        flex(center, center, col)
+        text-align center
+        +above('sm')
+          display flex
+          justify-content center
+          align-items flex-start
+          text-align left
+
       &__social
         flex(center, center, col)
         text-align center
+        +above('sm')
+          text-align right
 
+      &__local
+      &__social
         h3
+          color $red
           margin-bottom 15px
 
         a
           margin-top 15px
-
-      &__local
-        +above('sm')
-          flex(center, left, col)
-          text-align left
-
-      &__social
-        +above('sm')
-          flex(center, right, col)
-          text-align right
-
+          &:hover
+            color $red
 
       &--copyright
         flex(center, center, col)

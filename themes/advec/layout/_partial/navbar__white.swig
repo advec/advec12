@@ -1,5 +1,5 @@
 <!-- Header / Nav -->
-<div class="navbar">
+<div class="navbar navbar__white">
     <div class="navbar__container">
         <div class="navbar__container__row">
             <div class="navbar__container__row__logo">
@@ -133,7 +133,7 @@
     </div>
 </div>
 
-<div class="megamenu" style="visibility: hidden">
+<div class="megamenu megamenu__white" style="visibility: hidden">
   <div class="megamenu__container">
   	<div class="megamenu__container__block">
   		<ul class="megamenu__container__block__list">
