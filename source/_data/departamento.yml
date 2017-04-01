@@ -1,0 +1,35 @@
+- name: "Familia"
+  img: "familia"
+
+- name: "Ensino"
+  img: "ensino"
+
+- name: "Interligados"
+  img: "interligados"
+
+- name: "Interligados Kids"
+  img: "interligadoskids"
+
+- name: "Juventude"
+  img: "juventude"
+
+- name: "Mulher Vitoriosa"
+  img: "mulhervitoriosa"
+
+- name: "Musica"
+  img: "musica"
+
+- name: "DINC"
+  img: "dinc"
+
+- name: "Obreiros"
+  img: "obreiro"
+
+- name: "Renovo"
+  img: "renovo"
+
+- name: "Socioambiental"
+  img: "socioambiental"
+
+- name: "Surdos"
+  img: "surdo"

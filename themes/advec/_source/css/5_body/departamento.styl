@@ -1,74 +1,88 @@
 //
-// Page - Departamentos
+// Page - Departamento
 //
 // ==================================================
 
-.header-departamentos__section
-  height 35vh
-  color $white
-  text-align center
-  display flex
-  justify-content center
-  align-items center
-  overflow hidden
-  background-image url('/assets/images/back/section_departamentos.png')
-  background-size cover
-  background-position center center
-  background-repeat no-repeat
-
-  .section__inner-wrap
-    width 100%
-    flex-flow column
-
-    .inner_wrap__block
-      display flex
-      justify-content center
-      align-items center
-      flex-flow column
-
-      .block__text
-        margin-top 50px
-
-.list-departamentos__section
-  width 100%
-  display flex
-  justify-content center
-  align-items center
-
-  .section__list
-    width 100%
+.departamento-title
     display flex
-    flex-flow row
-    flex-wrap wrap
+    align-items center
+    flex-direction column
+    background white
+    box-sizing border-box
+    background url("/assets/images/back/section/departamento.png")
+    background-size cover
+    background-position center center
+    position relative
+    +above('sm')
+        height 75vh
+        flex(center, center, col)
+
+    &__container
+        width 85%
+        +above('xs')
+            display flex
+            align-items center
+            justify-content center
+
+        &__block
+            display inline-block
+            padding-top 6.5em
+            padding-bottom 4em
+            width 100%
+
+            &__title
+                +above('xs')
+                    text-align center
+
+                h1
+                    color white
+                    font-weight bold
+
+            &__text
+                padding-top 1em
+                +above('xs')
+                    text-align center
+
+                p
+                    color white
+
+.departamento-list
+    display flex
     justify-content center
     align-items center
-    flex-grow 1
+    margin-bottom 3em
+    margin-top 3em
+    width 100%
 
-    .list__item
-      cursor pointer
-      width 50%
-      height 25vh
-      display flex
-      justify-content center
-      align-items center
-      background-color $darker-gray
-      color $white
-      text-align center
-      border none !important
-      overflow hidden
+    &__container
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        width 85%
+        max-width 880px
 
-      &:hover
-        img
-          transition: all .2s
-          transform scale(1.1)
+        &__block
+            display flex
+            align-content center
+            flex-direction column
+            margin-bottom 3em
+            max-width 400px
+            width 100%
+            position relative
 
-      img
-        min-width 35em
-        display block
+            &__background
+                width 100%
+                display block
+                img
+                    width 100%
 
-      p
-        z-index 1
-        position absolute
-
-      &:last-child
-        width 100%
+            &__title
+                background $red
+                display inline-table
+                padding .6em
+                position absolute
+                left 1em
+                bottom -.6em
+                h3
+                    color white
+                    font-weight bold

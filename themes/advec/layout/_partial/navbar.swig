@@ -140,7 +140,7 @@
   			<li class="megamenu__container__block__list__item">
 			  	<h3>Sobre nós.</h3>
 				<ul>
-					<li><p><a href="/historia/">História</a></p></li>
+					<li><p><a href="/quem-somos/">Quem Somos</a></p></li>
 					<li><p><a href="/pr-jose-santos/">Pr. José Santos</a></p></li>
 					<li><p><a href="/lideranca/">Liderança</a></p></li>
 				</ul>

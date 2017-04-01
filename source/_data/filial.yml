@@ -1,22 +1,229 @@
 # Rio de Janeiro
-- id: "avmeriti"
+- est: "rj"
+  id: "avmeriti"
   nome: "Av. Meriti"
   pastor:
     nome: "Pr. Jair Souza"
     foto: ""
-  endereco: "Av. Meriti, 3.633 - Cordovil - Rio de Janeiro - RJ"
+  endereco: "Av. Meriti, 3.633 - Cordovil - Rio de Janeiro"
   telefone: "(21) 3301-7065"
-  link: "/filiais/avmeriti"
   facebook: "..."
 
-- id: "bangu"
+- est: "rj"
+  id: "bangu"
   nome: "Bangu"
   pastor:
     nome: "Pr. Marcelo Aguiar de Lima"
     foto: ""
-  endereco: "Praça da Fé, 3 - Bangu – Rio de Janeiro – RJ"
+  endereco: "Praça da Fé, 3 - Bangu – Rio de Janeiro"
   telefone: "(21) 3462-8791"
   link: "/filiais/bangu"
   facebook: "..."
   
 # São Paulo
+- est: "sp"
+  id: "saopaulo"
+  nome: "São Paulo"
+  pastor:
+    nome: "Pr. Alexandre Rangel Ferreira"
+    foto: ""
+  endereco: "Avenida Henry Ford - nº 1708 e 1712 - Parque da Mooca, São Paulo"
+  telefone: "(11) 2061.6036"
+  facebook: "..."
+
+# Espírito Santo
+- est: "es"
+  id: "castelo"
+  nome: "Castelo"
+  pastor:
+    nome: "Pr. João Ribeiro de Souza Costa Jr."
+    foto: ""
+  endereco: "Av. Ministro Araripe, 132 - Centro – Castelo"
+  telefone: "(28) 3452-3975"
+  facebook: "..."
+
+# Minas Gerais
+- est: "mg"
+  id: "carangola"
+  nome: "Carangola"
+  pastor:
+    nome: "Pr. Sandro Aguiar"
+    foto: ""
+  endereco: "Rua Santa Luzia, nº 450 - Centro - Carangola"
+  telefone: ""
+  facebook: "..."
+
+# Distrito Federal
+- est: "df"
+  id: "brasilia"
+  nome: "Brasília"
+  pastor:
+    nome: "Pr. José Rafael"
+    foto: ""
+  endereco: "SGAN 912 - Conj. D Bloco B - Asa Norte Brasília"
+  telefone: "(61) 3246-7273"
+  facebook: "..."
+
+- est: "df"
+  id: "sobradinho"
+  nome: "Sobradinho"
+  pastor:
+    nome: "Pr. Dailton Pinto de Morais"
+    foto: ""
+  endereco: "QD.3 - CL15 - Sobradinho"
+  telefone: "(61) 3051-0880"
+  facebook: "..."
+
+# Pernambuco
+- est: "pe"
+  id: "imbiribeira"
+  nome: "Imbiribeira"
+  pastor:
+    nome: "Pr. Ozeias Santos Leal"
+    foto: ""
+  endereco: "Av. Mascarenhas de Moraes, 2.713 - Imbiribeira – Recife"
+  telefone: "(81) 3339-3737"
+  facebook: "..."
+
+- est: "pe"
+  id: "moreno"
+  nome: "Moreno"
+  pastor:
+    nome: "Dc. Edmelson Alexandre dos Santos"
+    foto: ""
+  endereco: "Rua Vidal de Negreiros, 62 - Centro – Moreno"
+  telefone: ""
+  facebook: "..."
+
+- est: "pe"
+  id: "escada"
+  nome: "Escada"
+  pastor:
+    nome: "Dc. Kleber Monteiro da Silva"
+    foto: ""
+  endereco: "Rua Sete de Setembro, 63 - Santo Antônio – Escada"
+  telefone: ""
+  facebook: "..."
+
+- est: "pe"
+  id: "caxanga"
+  nome: "Caxangá"
+  pastor:
+    nome: "Pr.  Edson Vando Félix da Costa"
+    foto: ""
+  endereco: "Av. Caxangá – 2.165 - Cordeiro – Recife"
+  telefone: "(81) 3229-9014"
+  facebook: "..."
+
+- est: "pe"
+  id: "caruaru"
+  nome: "Caruaru"
+  pastor:
+    nome: "Pr. César Gomes Rodrigues Carreira"
+    foto: ""
+  endereco: "Rua Visconde de Inhaúma, 755 - Maurício de Nassau - Caruaru"
+  telefone: "(81) 3721-3453"
+  facebook: "..."
+
+- est: "pe"
+  id: "goiana"
+  nome: "Goiana"
+  pastor:
+    nome: "Pr. Sergio da Cunha"
+    foto: ""
+  endereco: "Rua Projetada, S/N. - Várzea - Recife"
+  telefone: ""
+  facebook: "..."
+
+# Paraná
+- est: "pr"
+  id: "curitiba"
+  nome: "Curitiba"
+  pastor:
+    nome: "Pr. Davi Martins Leal"
+    foto: ""
+  endereco: "Rua Coronel Luís José dos Santos, 2.018 - Boqueirão - Curitiba - PR"
+  telefone: "(41) 3086-2555"
+  facebook: "..."
+
+- est: "pr"
+  id: "campolargo"
+  nome: "Campo Largo"
+  pastor:
+    nome: "Pr. Benoni Ângelo de Oliveira"
+    foto: ""
+  endereco: "Rua Dom Manoel Silveira D'elboux, 140 - Bom Jesus  - Campo Largo"
+  telefone: "(41) 3292-6363"
+  facebook: "..."
+
+- est: "pr"
+  id: "lapa"
+  nome: "Lapa"
+  pastor:
+    nome: "Pr. Fábio Bilches de Lima"
+    foto: ""
+  endereco: "Av. Caetano Munhoz da Rocha, 816 Centro (Antigo Super Dip) - Lapa"
+  telefone: ""
+  facebook: "..."
+
+- est: "pr"
+  id: "guaratuba"
+  nome: "Guaratuba"
+  pastor:
+    nome: "Pr. Heber Robson das Neves Porto"
+    foto: ""
+  endereco: "Rua Manoel Henrique, nº 170 - Centro - Guaratuba"
+  telefone: "(41) 3472-4565"
+  facebook: "..."
+
+# Rio Grande do Norte
+- est: "rn"
+  id: "natal"
+  nome: "Natal"
+  pastor:
+    nome: "Pr. Anderson Corrêa Santos"
+    foto: ""
+  endereco: "Rua dos Gerânios, 52 - Capim Macio – Natal"
+  telefone: "(84) 3231-6742"
+  facebook: "..."
+
+- est: "rn"
+  id: "igapo"
+  nome: "Igapó"
+  pastor:
+    nome: "Pr. Alexsandro Moreno Moreira"
+    foto: ""
+  endereco: "Av. Dr. João Medeiros Filho, 287 - Igapó, Natal"
+  telefone: "(84) 3301-4331"
+  facebook: "..."
+
+# Santa Catarina
+- est: "sc"
+  id: "joinville"
+  nome: "Joinville"
+  pastor:
+    nome: "Pr. Vicente Sabbatino Pinheiro"
+    foto: ""
+  endereco: "Av. Getúlio Vargas, 1.023 - Bucarein - Joinville"
+  telefone: "(47) 3025-1315"
+  facebook: "..."
+
+- est: "sc"
+  id: "mafra"
+  nome: "Mafra"
+  pastor:
+    nome: "Pr. Rafael Martins de Moraes"
+    foto: ""
+  endereco: "Rua Gustavo Friedrich - S/Nº - Vila Nova - Mafra"
+  telefone: ""
+  facebook: "..."
+
+- est: "sc"
+  id: "jaraguadosul"
+  nome: "Jaraguá do Sul"
+  pastor:
+    nome: "Pr. Renato dos Reis Gomes"
+    foto: ""
+  endereco: "Rua João Planincheck, nº 407 - Nova Brasília - Jaraguá do Sul"
+  telefone: "(47) 3054-4912 - (47) 3054-4912"
+  facebook: "..."

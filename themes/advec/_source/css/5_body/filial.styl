@@ -5,7 +5,6 @@
 
 .filial-list
     background white
-    margin-top 6.9em
     height 100%
     box-sizing border-box
     flex(center, center, col)
@@ -71,3 +70,78 @@
 
                     +above('sm')
                         text-align left
+
+.filial-details
+    flex(up, center, col)
+    padding-bottom 2em
+    min-height 40vh
+    position relative
+    overflow hidden
+
+    +above('sm')
+        padding-top 2em
+        min-height 80vh
+
+    &__container
+        display flex
+        flex-direction column
+        width 85%
+
+        &__return
+            padding-top 1.8em
+            padding-bottom 3em
+            +above('lg')
+                display none
+
+        &__title
+            padding-bottom 2em
+            color $red
+
+        &__list
+
+            &__block
+                padding-bottom 2em
+                padding-top 2em
+
+                &__end
+                    padding-top .5em
+                    padding-bottom .5em
+
+
+                h3
+                    font-weight bold
+                    padding-bottom .5em
+
+                p
+                    line-height 16px
+
+                &:first-child
+                    border none
+                    padding-top 0em
+
+    &__menu
+        display none
+        position fixed
+        right 0
+        width 25%
+        border-left 1px solid #efefef
+        padding-left 2em
+        background white
+
+        +above('lg')
+            display block
+
+        &__container
+            width 100%
+
+            &__list
+                display flex
+                justify-content center
+                align-items flex-start
+                flex-direction column
+
+                &__item
+                    margin-bottom 1em
+
+                    &:last-child
+                        margin-bottom 0
