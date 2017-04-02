@@ -167,7 +167,6 @@
 				<ul>
 					<li><p><a href="/dizimos-e-ofertas/">Dízimos e Ofertas</a></p></li>
 					<li><p><a href="/expansao/">Expansão</a></p></li>
-					<li><p><a href="/trabalho-social/">Trabalho Social</a></p></li>
 					<li><p><a href="/voluntario/">Programa Voluntário</a></p></li>
 				</ul>
   			</li>

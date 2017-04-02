@@ -1,0 +1,98 @@
+//
+// Page - Departamento
+//
+// ==================================================
+
+.vlt-header
+    display flex
+    align-items center
+    justify-content center
+    flex-direction column
+    background white
+    box-sizing border-box
+    background url("/assets/images/back/section/voluntario__b.png")
+    background-size cover
+    background-position center center
+    height 70vh
+    position relative
+
+    &__container
+      display flex
+      align-items center
+      justify-content flex-end
+      height 100%
+      width 85%
+      +above('lg')
+        justify-content center
+
+      &__block
+        position absolute
+        max-width 200px
+        width 100%
+        +above('lg')
+          right auto
+          max-width 420px
+
+        &__title
+          color white
+          background linear-gradient(to left, #c0392b , #8e44ad);
+          display block
+          padding 1.4em
+          text-align right
+          width auto
+          +above('lg')
+            text-align center
+
+
+.vlt-bg
+    display flex
+    align-items center
+    justify-content center
+    flex-direction column
+    background white
+    box-sizing border-box
+    background url("/assets/images/back/section/voluntario__c.png")
+    background-size cover
+    background-position center center
+    height 70vh
+    position relative
+
+    &__container
+      display flex
+      align-items center
+      justify-content flex-start
+      height 100%
+      width 85%
+      +above('lg')
+        justify-content center
+
+      &__block
+        position absolute
+        max-width 200px
+        width 100%
+        +above('lg')
+          right auto
+          max-width 420px
+
+        &__title
+          color white
+          background linear-gradient(to left, #1A2980 , #26D0CE)
+          display block
+          padding 1.4em
+          text-align left
+          width auto
+          +above('lg')
+            text-align center
+
+.vlt-infos
+    background linear-gradient(to left, #c0392b , #8e44ad)
+    box-sizing border-box
+    flex(center, center, col)
+    padding-top 1.9em
+    padding-bottom 1.9em
+
+    &__container
+      width 85%
+
+      &__title
+        color white
