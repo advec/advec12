@@ -1,5 +1,5 @@
 <!-- Header / Nav -->
-<div class="navbar navbar__white">
+<div class="navbar navbar__color">
     <div class="navbar__container">
         <div class="navbar__container__row">
             <div class="navbar__container__row__logo">

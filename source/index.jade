@@ -4,32 +4,51 @@ layout: index
 //
 // Swiper
 // --------------------------------------------------
-section.slider
+section.slider      
   .swiper-container
+    .swiper-container__block
+      .swiper-container__block__title
+        h1 Somos Um
+        
+      .swiper-container__block__button
+        a(href="/programacao/").btn.btn--white Novo por aqui?
+        a(href="/programacao/").btn.btn--aovivo Assista ao vivo
+      
     .swiper-wrapper
-      .swiper-slide
-        .swiper-block
-          .swiper-block__title
-            h1 Estamos no ano de Fazer a Diferença.
-
-          .swiper-block__video
-            video(autoplay="autoplay" loop="loop" muted="muted" src="/assets/videos/bg-home-1.mp4")
-
-    a(href="/live/").bar--aovivo
-      p 
-        | Estamos ao vivo, 
-        strong clique para assistir.
+      .swiper-slide(style="background-image: url('assets/images/swipper/background__d.jpg')")
+            
+      .swiper-slide(style="background-image: url('assets/images/swipper/background__b.jpg')")
+            
+      .swiper-slide(style="background-image: url('assets/images/swipper/background__c.jpg')")
+            
+      .swiper-slide(style="background-image: url('assets/images/swipper/background__e.jpg')")
 
 //
 // Bem vindo
 // --------------------------------------------------
 section.bemvindo
   .bemvindo__container
-    .bemvindo__container__text
-      h3 Seja bem vindo, sua presença nos enche de alegria e satisfação. Venha mais vezes! 
-      h3(style="margin-top: 1em") Acompanhe nossas programações e siga nossas redes sociais, mas saiba que nada substitui a sua presença. No Salmo 37.5, diz:
-      h3(style="margin-top: 1em") 
-        strong "Entrega o teu caminho ao Senhor, confia nele, e Ele tudo fará".
+    .bemvindo__container__block
+      .bemvindo__container__block__text
+        h2 Seja bem vindo, sua presença nos enche de alegria e satisfação. Venha mais vezes!
+      
+      .bemvindo__container__block__button
+        a(href="/filiais/").btn.btn--orange Perto de você
+      
+//
+// prsilas
+// --------------------------------------------------
+section.prsilas
+  .prsilas__block
+    .prsilas__block__container
+      .prsilas__block__container__col
+        .prsilas__block__container__col__title
+          h2 Pr. Silas Malafaia
+        .prsilas__block__container__col__text
+          p Atual pastor presidente da ADVEC, casado com a Pra. Elizete Malafaia e voz profética levantado por Deus para esta nação.
+        .prsilas__block__container__col__button
+          a(href="/programacao/").btn.btn--white Conheça
+          
 //
 // EBD
 // --------------------------------------------------
@@ -41,9 +60,23 @@ section.ebd
         .ebd__block__container__col__title
           h2 Escola Bíblica Dominical.
         .ebd__block__container__col__text
-          p Traga sua família para a maior escola do mundo. Aprenda e proteja, você e sua família.
+          p Traga sua família para a maior escola do mundo. Aprenda e proteja você e sua família.
         .ebd__block__container__col__button
-          a(href="/programacao/").btn.btn--black Programação
+          a(href="/programacao/").btn.btn--red Programação
+
+//
+// Batismo
+// --------------------------------------------------
+section.batismo
+  .batismo__block
+    .batismo__block__container
+      .batismo__block__container__col
+        .batismo__block__container__col__title
+          h2 Batismo: Um ato ordenado por Cristo. 
+        .batismo__block__container__col__text
+          p “Todo aquele que crê e for batizado, será salvo; mas quem não crer será condenado”. (Mc 16:16)” 
+        .batismo__block__container__col__button
+          a(href="/batismo/").btn.btn--white Seja um
 
 //
 // Departamentos
@@ -54,11 +87,11 @@ section.departamento
     .departamento__block__container
       .departamento__block__container__col
         .departamento__block__container__col__title
-          h2 Amar e Servir.
+          h2 Junte-se a Nós.
         .departamento__block__container__col__text
-          p Você com certeza tem um espaço aqui dentro. Temos diversos departamentos, para todo tipo de idade e para todos que querem trabalhar no Reino.
+          p Faça parte do movimento para a Expansão do Reino de Deus. Temos departamentos para todas as idades e estamos prontos para receber você.
         .departamento__block__container__col__button
-          a(href="/departamentos/").btn.btn--black Nossos departamentos
+          a(href="/fazer-parte/").btn.btn--black Fazer Parte
 
 //
 // Bar | Recadastro membros
@@ -82,35 +115,28 @@ section.oracao
           p Fique a vontade para fazer seu pedido. Nós vamos orar por você.
       .oracao__container__col__button
         a(href="#").btn.btn--black
-          | Fazer pedido de oração
-
-      // #--pop__gray.section__popup.mfp-hide
-        // script(type="text/javascript" src="https://advec.formstack.com/forms/js.php/fale_conosco")
-
+          | Fazer pedido
+          
 //
 // Useful
 // --------------------------------------------------
 section.useful
-  .useful__container
-    .useful__container__row
-      .useful__container__row__item
-        h3 Aplicativo
-        p Faça o download do nosso aplicativo. Android e iOS.
-        a(href="#").btn.btn--black
-          | Download
-
-      .useful__container__row__item
-        h3 Newsletter
-        p Se inscreva e receba todas as novidades da nossa igreja.
-        a(href="/newsllater/").btn.btn--black
-          | Se inscrever
-
-      .useful__container__row__item
-        h3 Para membros
-        p Se você é membro, faça seu recadastramento.
-        a(href="/recadastramento/").btn.btn--black
-          | Recadastramento
-
-
-      // #--pop__gray.section__popup.mfp-hide
-        // script(type="text/javascript" src="https://advec.formstack.com/forms/js.php/fale_conosco")
+  .useful__row
+    .useful__row__item
+      .useful__row__item__background
+        img(src="/assets/images/item/app.jpg")
+      .useful__row__item__button
+        a(href="/fale-conosco/").btn.btn--white Baixe nosso app
+            
+    .useful__row__item
+      .useful__row__item__background
+        img(src="/assets/images/item/atendimento.jpg")
+      .useful__row__item__button
+        a(href="/fale-conosco/").btn.btn--white Fale conosco
+        
+    .useful__row__item
+      .useful__row__item__background
+        img(src="/assets/images/item/recadastramento.jpg")
+      .useful__row__item__button
+        a(href="/recadastramento/").btn.btn--white Recadastramento
+      

@@ -1,13 +1,13 @@
-{{ partial('_partial/navbar__white') }}
+{{ partial('_partial/navbar__color') }}
 {{ page.content }}
 
-<section class="programacao-list">
-    <div class="programacao-list__container">
-        <div class="programacao-list__container__block">
-            <div class="programacao-list__container__block__day">
+<section class="pgm-list">
+    <div class="pgm-list__container">
+        <div class="pgm-list__container__block">
+            <div class="pgm-list__container__block__day">
                 <h3>Domingo</h3>
             </div>
-            <div class="programacao-list__container__block__event">
+            <div class="pgm-list__container__block__event">
                     {% for programacao in site.data.programacao %}
                         {% if programacao.day == "dom" %}
                             <div class="infos">
@@ -29,11 +29,11 @@
             </div>
         </div>
 
-        <div class="programacao-list__container__block">
-            <div class="programacao-list__container__block__day">
+        <div class="pgm-list__container__block">
+            <div class="pgm-list__container__block__day">
                 <h3>Segunda-Feira</h3>
             </div>
-            <div class="programacao-list__container__block__event">
+            <div class="pgm-list__container__block__event">
                     {% for programacao in site.data.programacao %}
                         {% if programacao.day == "seg" %}
                             <div class="infos">
@@ -55,11 +55,11 @@
             </div>
         </div>
 
-        <div class="programacao-list__container__block">
-            <div class="programacao-list__container__block__day">
+        <div class="pgm-list__container__block">
+            <div class="pgm-list__container__block__day">
                 <h3>Terça-Feira</h3>
             </div>
-            <div class="programacao-list__container__block__event">
+            <div class="pgm-list__container__block__event">
                     {% for programacao in site.data.programacao %}
                         {% if programacao.day == "ter" %}
                             <div class="infos">
@@ -81,11 +81,11 @@
             </div>
         </div>
 
-        <div class="programacao-list__container__block">
-            <div class="programacao-list__container__block__day">
+        <div class="pgm-list__container__block">
+            <div class="pgm-list__container__block__day">
                 <h3>Quarta-Feira</h3>
             </div>
-            <div class="programacao-list__container__block__event">
+            <div class="pgm-list__container__block__event">
                     {% for programacao in site.data.programacao %}
                         {% if programacao.day == "qua" %}
                             <div class="infos">
@@ -107,11 +107,11 @@
             </div>
         </div>
 
-        <div class="programacao-list__container__block">
-            <div class="programacao-list__container__block__day">
+        <div class="pgm-list__container__block">
+            <div class="pgm-list__container__block__day">
                 <h3>Quinta-Feira</h3>
             </div>
-            <div class="programacao-list__container__block__event">
+            <div class="pgm-list__container__block__event">
                     {% for programacao in site.data.programacao %}
                         {% if programacao.day == "qui" %}
                             <div class="infos">
@@ -133,11 +133,11 @@
             </div>
         </div>
 
-        <div class="programacao-list__container__block">
-            <div class="programacao-list__container__block__day">
+        <div class="pgm-list__container__block">
+            <div class="pgm-list__container__block__day">
                 <h3>Sexta-Feira</h3>
             </div>
-            <div class="programacao-list__container__block__event">
+            <div class="pgm-list__container__block__event">
                     {% for programacao in site.data.programacao %}
                         {% if programacao.day == "sex" %}
                             <div class="infos">
@@ -159,11 +159,11 @@
             </div>
         </div>
 
-        <div class="programacao-list__container__block">
-            <div class="programacao-list__container__block__day">
+        <div class="pgm-list__container__block">
+            <div class="pgm-list__container__block__day">
                 <h3>Sábado</h3>
             </div>
-            <div class="programacao-list__container__block__event">
+            <div class="pgm-list__container__block__event">
                     {% for programacao in site.data.programacao %}
                         {% if programacao.day == "sab" %}
                             <div class="infos">

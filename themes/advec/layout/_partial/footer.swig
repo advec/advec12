@@ -4,7 +4,7 @@
             <div class="footer__container__row__local">
                 <h3>Estamos<br>Aqui.</h3>
                 <p>(Sede) Rua Montevideu, 1191<br>Penha - Rio de Janeiro</p>
-                <a href="/filiais/" class="btn btn--black">Encontre a filial mais próxima</a>
+                <a href="/filiais/" class="btn btn--black">Nossas filiais</a>
             </div>
             <div class="footer__container__row__social">
                 <h3>Nossas<br>Redes.</h3>
@@ -32,6 +32,19 @@
 {{ js('js/application') }}
 
 <!-- Google Analytics-->
+<script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    effect: 'fade',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    slidesPerView: 1,
+    centeredSlides: true,
+    autoplayDisableOnInteraction: false,
+    grabCursor: true,
+    autoplay: 2500,
+    loop: true
+  })
+  </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

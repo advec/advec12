@@ -125,8 +125,12 @@
                         <li><a href={{ url_for(link) }}>{{ loop.key }}</a></li>
                         {% endfor %}
                     </ul>
-                    <a href="http://www.youtube.com/user/advitoriaemcristo/live" target="_blank" class="btn btn--red aovivo">AO VIVO</a>
-                    <a href="#" class="btn btn--white btn-menu">Menu</a>
+                    <div class="btn-nav">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,37 +142,11 @@
   	<div class="megamenu__container__block">
   		<ul class="megamenu__container__block__list">
   			<li class="megamenu__container__block__list__item">
-			  	<h3>Sobre nós.</h3>
-				<ul>
-					<li><p><a href="/quem-somos/">Quem Somos</a></p></li>
-					<li><p><a href="/pr-jose-santos/">Pr. José Santos</a></p></li>
-					<li><p><a href="/lideranca/">Liderança</a></p></li>
-				</ul>
-  			</li>
-			<li class="megamenu__container__block__list__item">
-				<h3>Fique ligado.</h3>
-				<ul>
-					<li><p><a href="/filiais/">Filiais</a></p></li>
-					<li><p><a href="/programacao/">Programação</a></p></li>
-					<li><p><a href="/departamentos/">Departamentos</a></p></li>
-					<li><p><a href="/fale-conosco/">Fale Conosco</a></p></li>
-				</ul>
-  			</li>
-        	<li class="megamenu__container__block__list__item">
-				<h3>De braços abertos.</h3>
-				<ul>
-					<li><p><a href="/jesus/">Jesus</a></p></li>
-					<li><p><a href="/primeiros-passos/">Primeiros Passos</a></p></li>
-					<li><p><a href="/batismo/">Batismo</a></p></li>
-				</ul>
-  			</li>
-  			<li class="megamenu__container__block__list__item">
-			  	<h3>Eu faço parte.</h3>
-				<ul>
-					<li><p><a href="/dizimos-e-ofertas/">Dízimos e Ofertas</a></p></li>
-					<li><p><a href="/expansao/">Expansão</a></p></li>
-					<li><p><a href="/voluntario/">Programa Voluntário</a></p></li>
-				</ul>
+			  	<h3><a href="/filiais/">Quem Somos</a></h3>
+          <h3><a href="/filiais/">Onde Estamos</a></h3>
+          <h3><a href="/filiais/">Faça Parte</a></h3>
+          <h3><a href="/filiais/">Programação</a></h3>
+          <h3><a href="/filiais/">Dízimos e Ofertas</a></h3>
   			</li>
   		</ul>
   	</div>

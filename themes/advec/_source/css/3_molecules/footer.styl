@@ -30,8 +30,11 @@
       &__social
         margin-top 30px
         display none
+        flex(center, center, col)
+        text-align center
         +above('sm')
           display block
+          text-align right
 
       &__icons
         flex(between, center, row)
@@ -50,16 +53,11 @@
           align-items flex-start
           text-align left
 
-      &__social
-        flex(center, center, col)
-        text-align center
-        +above('sm')
-          text-align right
-
       &__local
       &__social
         h3
-          color $red
+          color $gray-darker
+          font-weight 500
           margin-bottom 15px
 
         a

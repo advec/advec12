@@ -24,7 +24,7 @@
   <!-- Windows Phone -->
   <meta name="msapplication-navbutton-color" content="#cc0000">
   <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="#cc0000"> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="#cc0000">
   <meta name="msapplication-TileImage" content="{{ url_for('icon/mstile-144x144.png') }}">
   <meta property="og:title" content="Assembleia de Deus Vitória e mCristo." />
   <meta property="og:type" content="article" />
@@ -34,5 +34,5 @@
   <!-- CSS -->
   {{ css('css/application') }}
   <!-- endbuild -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
 </head>
