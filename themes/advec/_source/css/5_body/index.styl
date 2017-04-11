@@ -34,9 +34,12 @@
       position absolute
       top 0
       z-index 9999
-      width 85%
+      padding-left calc(15% / 2)
+      padding-right calc(15% / 2)
+      width 100%
       +above('sm')
         align-items center
+        width 100%
 
       &__title
         height 155px
@@ -432,6 +435,7 @@
   justify-content center
   align-items center
   width 100%
+  min-height 20vh
   padding-top 2em
   padding-bottom 2em
   +above('sm')
@@ -472,6 +476,7 @@
 
       &__background
         position absolute
+        left 0
         z-index 1
         opacity .8
         width 100%

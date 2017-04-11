@@ -35,14 +35,10 @@ const buildPaths = {
 };
 
 gulp.task('css', () => {
-  var processors = [
-    rucksack,
-    autoprefixer('last 2 version', 'ie 9')
-  ];
   return gulp.src(srcPaths.styl)
     .pipe(plumber())
     .pipe(stylus({
-      use: [rupture(), poststylus([lost(), rucksack({ autoprefixer: true })])],
+      use: [rupture(), poststylus([lost(), rucksack(), autoprefixer({ browsers: ['> 1%', 'last 3 versions', 'Firefox >= 20', 'iOS >=7'] })])],
       compress: false
     }))
     .pipe(gcmq())
