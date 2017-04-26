@@ -6,15 +6,16 @@
 .qsm-header
     display flex
     align-items center
+    height 100vh
     flex-direction column
     background white
     box-sizing border-box
-    background url("/assets/images/back/section/historia.png")
+    background url("/assets/images/back/section/quemsomos__a.jpg")
     background-size cover
     background-position center center
     position relative
+    overflow hidden
     +above('sm')
-        height 75vh
         flex(center, center, col)
 
     &__container
@@ -46,6 +47,37 @@
                 p
                     color white
 
+    &__menu
+      display flex
+      justify-content center
+      align-items center
+      position absolute
+      bottom 0
+      width 100%
+      padding-top 1.5em
+      padding-bottom 1.5em
+      background rgba(0,0,0,0.7)
+
+      &__container
+        display flex
+        justify-content center
+        align-items center
+        width 85%
+
+        &__list
+          display flex
+          justify-content center
+          align-items center
+
+          &__item
+            margin-right 3em
+
+            &:last-child
+              margin-right 0
+
+            a
+              color $white
+
 .qsm-history
     flex(center, center, row)
     width 100%
@@ -60,9 +92,10 @@
         position relative
 
         &__title
-          margin-bottom .5em
+          margin-bottom 3em
           h2
             color $red
+            font-weight bold
 
         &__sub
           margin-bottom .5em
@@ -73,17 +106,3 @@
         &__text
           p
             margin-bottom 2em
-
-          &:after
-            display inline-block
-            font-family FontAwesome
-            content "\f10d"
-            font-style normal
-            font-weight normal
-            text-decoration inherit
-            font-size 8rem
-            color black
-            opacity .03
-            position absolute
-            top 120px
-            left -60px

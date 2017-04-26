@@ -12,18 +12,12 @@ section.slider
         
       .swiper-container__block__button
         a(href="/programacao/").btn.btn--white Novo por aqui?
-        a(href="/programacao/").btn.btn--aovivo Assista ao vivo
+        a(href="http://advec.churchonline.org").btn.btn--aovivo Assista ao vivo
       
     .swiper-wrapper
-      .swiper-slide(style="background-image: url('assets/images/swipper/background__d.jpg')")
-            
-      .swiper-slide(style="background-image: url('assets/images/swipper/background__b.jpg')")
-            
-      .swiper-slide(style="background-image: url('assets/images/swipper/background__c.jpg')")
-            
-      .swiper-slide(style="background-image: url('assets/images/swipper/background__e.jpg')")
+      .swiper-slide
+        video(autoplay="autoplay" loop="loop" muted="muted" src="assets/videos/bg-home-1.mp4")
 
-//
 // Bem vindo
 // --------------------------------------------------
 section.bemvindo
@@ -45,9 +39,9 @@ section.prsilas
         .prsilas__block__container__col__title
           h2 Pr. Silas Malafaia
         .prsilas__block__container__col__text
-          p Atual pastor presidente da ADVEC, casado com a Pra. Elizete Malafaia e voz profética levantado por Deus para esta nação.
+          p Pastor presidente da ADVEC, casado com a Pra. Elizete Malafaia e voz profética levantada por Deus para esta nação.
         .prsilas__block__container__col__button
-          a(href="/programacao/").btn.btn--white Conheça
+          a(href="/pr-silas-malafaia/").btn.btn--white Conheça
           
 //
 // EBD
@@ -92,6 +86,20 @@ section.departamento
           p Faça parte do movimento para a Expansão do Reino de Deus. Temos departamentos para todas as idades e estamos prontos para receber você.
         .departamento__block__container__col__button
           a(href="/fazer-parte/").btn.btn--black Fazer Parte
+          
+//
+// Doe
+// --------------------------------------------------
+section.doe
+  .doe__block
+    .doe__block__container
+      .doe__block__container__col
+        .doe__block__container__col__title
+          h2 Fé e liberalidade
+        .doe__block__container__col__text
+          p Quem faz a história da Igreja é o povo. As obras, as novas Igrejas e os trabalhos sociais são frutos da fidelidade e liberalidade da Igreja. 
+        .doe__block__container__col__button
+          a(href="/dizimos-e-ofertas/").btn.btn--white Doe Online
 
 //
 // Bar | Recadastro membros
@@ -126,7 +134,7 @@ section.useful
       .useful__row__item__background
         img(src="/assets/images/item/app.jpg")
       .useful__row__item__button
-        a(href="/fale-conosco/").btn.btn--white Baixe nosso app
+        a(href="/#/").btn.btn--white Baixe nosso app
             
     .useful__row__item
       .useful__row__item__background
@@ -138,5 +146,5 @@ section.useful
       .useful__row__item__background
         img(src="/assets/images/item/recadastramento.jpg")
       .useful__row__item__button
-        a(href="/recadastramento/").btn.btn--white Recadastramento
+        a(href="/#/").btn.btn--white Recadastramento
       

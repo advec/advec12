@@ -19,7 +19,62 @@
   telefone: "(21) 3462-8791"
   link: "/filiais/bangu"
   facebook: "..."
-  
+
+- est: "rj"
+  id: "barradatijuca"
+  nome: "Barra da Tijuca"
+  pastor:
+    nome: "Pr. Paulo José Rosa Vieira"
+    foto: ""
+  endereco: "Av. Lúcio Costa, 3.800 - Barra da Tijuca – Rio de Janeiro"
+  telefone: "(21) 2439-8248"
+  link: "/filiais/barradatijuca"
+  facebook: "..."
+
+- est: "rj"
+  id: "brasdepina"
+  nome: "Brás de Pina"
+  pastor:
+    nome: "Dc. Anderson de Oliveira Mota"
+    foto: ""
+  endereco: "Rua Mojaca,54 - Brás de Pina – Rio de Janeiro"
+  telefone: "(21) 3455-5662"
+  link: "/filiais/brasdepina"
+  facebook: "..."
+
+- est: "rj"
+  id: "cajai"
+  nome: "Cajá I"
+  pastor:
+    nome: "Pr. Wallace Paiva"
+    foto: ""
+  endereco: "Rua do Cajá, 632 - Penha – Rio de Janeiro"
+  telefone: ""
+  link: "/filiais/cajai"
+  facebook: "..."
+
+- est: "rj"
+  id: "cajaii"
+  nome: "Cajá II"
+  pastor:
+    nome: "Pr. José Roberto Lopes de Oliveira"
+    foto: ""
+  endereco: "Rua do Cajá, 1.370 - Penha – Rio de Janeiro"
+  telefone: ""
+  link: "/filiais/cajaii"
+  facebook: "..."
+
+- est: "rj"
+  id: "campinho"
+  nome: "Campinho"
+  pastor:
+    nome: "Dc. Manoel Leonildas da Silva"
+    foto: ""
+  endereco: "Rua Sagrado Coração, 49 - Campinho – Rio de Janeiro"
+  telefone: ""
+  link: "/filiais/campinho"
+  facebook: "..."
+
 # São Paulo
 - est: "sp"
   id: "saopaulo"

@@ -42,12 +42,56 @@
           +above('xs')
             text-align center
 
+.btm-dates
+  display flex
+  background url("/assets/images/back/section/batismo__b.jpg")
+  background-size cover
+  background-position center center
+  justify-content center
+  height 60vh
+  color $white
+  width 100%
+
+  &__container
+    display flex
+    justify-content center
+    align-items center
+    flex-direction column
+    width 85%
+
+    &__row
+      display flex
+      justify-content center
+      height auto
+      width 100%
+
+      &:first-child
+        margin-bottom 1em
+
+      h3
+        font-weight bold
+
+      &__list
+        display flex
+        justify-content center
+
+        &__item
+          width auto
+          margin-right 3em
+
+          h3
+            font-weight 300
+
+          &:last-child
+            margin-right 0
+
 .btm-bar
   background linear-gradient(to left, #5C258D , #4389A2)
   display flex
-  height 89vh
   aligm-items center
   justify-content center
+  padding-top 1.5em
+  padding-bottom 1.5em
 
   &__container
     display flex
@@ -58,9 +102,9 @@
       width 100%
       +above('sm')
         justify-content center
-        max-width 800px
-      h3
+      h4
         color white
+        text-align center
 
 .btm-faq
     background white
