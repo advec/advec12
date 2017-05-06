@@ -107,66 +107,77 @@
         width 100%
         z-index 3
 
-.fzp-voluntario
-    display none
+.fzp-page-header
+  background $red
+  display flex
+  justify-content center
+  align-items center
+  padding-top 6.3em
+  padding-bottom 3em
+  position relative
+  overflow visible
+  width 100%
+
+  &__name
+    background $white
+    bottom -2em
+    padding 1em 2em
+    position absolute
+    z-index 9999
+    box-shadow 0px 11px 52px -15px rgba(0,0,0,0.58)
+    h3
+      font-weight bold
+      color $orange
+
+  &__container
+    display flex
     align-items center
-    justify-content flex-end
+    justify-content center
     flex-direction column
-    background white
-    box-sizing border-box
-    background-image url("/assets/images/back/section/voluntario__a.jpg")
-    background-size cover
-    background-position center center
-    height 100vh
-    position relative
+    width 85%
 
-    &__container
+    &__title
+      text-align center
+      margin-bottom 1em
+
+      h1
+        color $white
+        font-weight bold
+
+      p
+        color white
+        margin-top 1em
+
+    &__list
       display flex
-      align-items flex-end
-      justify-content space-between
-      flex-direction column
-      margin-bottom 5em
-      width 85%
+      align-items center
+      justify-content center
+      flex-direction row
+      flex-wrap wrap
 
-      &__block
+      &__item
         display flex
-        justify-content flex-end
-        flex-direction column
-        position relative
-        box-sizing border-box
-        max-width 400px
-        width 100%
-        height 100%
-        display block
+        justify-content center
+        align-items center
+        opacity .6
+        width 50px
+        height 50px
+        overflow hidden
 
-        &__title
+        &.active
+          font-size 1.4rem
+          opacity 1
+
+        &:hover
+          font-size 1.4rem
+          opacity 1
+
+          a
+            width 100%
+            height 100%
+
+        a
+          display flex
+          justify-content center
+          align-items center
           color $white
-          text-align right
-          position relative
-          z-index 2
-
-          h1
-            font-weight bold
-
-        &__text
-          color white
-          text-align right
-          position relative
-          z-index 2
-
-        &__registry
-          color white
-          text-align right
-          position relative
-          max-width 500px
-          z-index 2
-
-      &:after
-        content ''
-        background linear-gradient(180deg, rgba(0,0,0,0) 0%,#CB356B 50%,#BD3F32 100%)
-        width 100%
-        height 80%
-        position absolute
-        right 0
-        bottom 0
-        z-index 1

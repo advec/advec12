@@ -137,21 +137,16 @@
     </div>
 </div>
 
-<div class="megamenu megamenu__white" style="visibility: hidden">
+<div class="megamenu" style="visibility: hidden">
   <div class="megamenu__container">
   	<div class="megamenu__container__block">
   		<ul class="megamenu__container__block__list">
   			<li class="megamenu__container__block__list__item">
-			  	<h3><a href="/filiais/">Quem Somos</a></h3>
-  			</li>
-			  <li class="megamenu__container__block__list__item">
-				  <h3>Onde estamos</h3>
-  			</li>
-        	<li class="megamenu__container__block__list__item">
-				<h3>De braços abertos.</h3>
-  			</li>
-  			<li class="megamenu__container__block__list__item">
-			  	<h3>Eu faço parte.</h3>
+			  	<h4><a href="/quem-somos/">Quem Somos</a></h4>
+          <h4><a href="/filiais/">Onde Estamos</a></h4>
+          <h4><a href="/dizimos-e-ofertas/">Dîzimos e Oferitas</a></h4>
+          <h4><a href="/fazer-parte/">Departamentos</a></h4>
+          <h4><a href="/programacao/">Programação</a></h4>
   			</li>
   		</ul>
   	</div>

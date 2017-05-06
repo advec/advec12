@@ -3,7 +3,6 @@
 <html lang="pt-br">
   {{ partial('_partial/head') }}
 <body>
-<div class="preload"></div>
 {% endif %}
   {{ body }}
   {% if page.footer == NULL %}

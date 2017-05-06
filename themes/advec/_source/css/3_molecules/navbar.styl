@@ -11,7 +11,7 @@
   width 100%
   top 0
   position absolute
-  z-index 3
+  z-index 5
   +above('sm')
     background none
 
@@ -121,6 +121,10 @@
     .st3
       fill #000 !important
 
+    .btn-nav
+      span
+        background $gray-darker
+        color $gray-darker
 
 /* menu hamburguer nav */
 
@@ -131,8 +135,8 @@
   height 100%
   top 0
   color #ffffff !important
-  background #141414
-  z-index: 2
+  background $gray-darker
+  z-index: 4
   justify-content center
   transition all 1s cubic-bezier(0.7, -0.02, 0, 1)
   transform translateY(-40%)
@@ -145,7 +149,7 @@
     padding-bottom 5%
 
   &.appear
-    opacity 1
+    opacity 0.98
     transform translateY(0%) !important
 
   &__container
@@ -186,7 +190,7 @@
           flex-direction column
           justify-content center
 
-          h3
+          h4
             display inline-block
             font-weight 500
             margin-top 2em

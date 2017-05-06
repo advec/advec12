@@ -142,11 +142,11 @@
   	<div class="megamenu__container__block">
   		<ul class="megamenu__container__block__list">
   			<li class="megamenu__container__block__list__item">
-			  	<h3><a href="/filiais/">Quem Somos</a></h3>
-          <h3><a href="/filiais/">Onde Estamos</a></h3>
-          <h3><a href="/filiais/">Faça Parte</a></h3>
-          <h3><a href="/filiais/">Programação</a></h3>
-          <h3><a href="/filiais/">Dízimos e Ofertas</a></h3>
+			  	<h4><a href="/quem-somos/">Quem Somos</a></h4>
+          <h4><a href="/filiais/">Onde Estamos</a></h4>
+          <h4><a href="/dizimos-e-ofertas/">Dîzimos e Oferitas</a></h4>
+          <h4><a href="/fazer-parte/">Departamentos</a></h4>
+          <h4><a href="/programacao/">Programação</a></h4>
   			</li>
   		</ul>
   	</div>

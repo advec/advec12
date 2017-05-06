@@ -33,7 +33,7 @@
 
 <!-- Google Analytics-->
 <script>
-  var mySwiper = new Swiper ('.swiper-container', {
+  var mySwiper = new Swiper ('.swiper__container', {
     effect: 'fade',
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
@@ -44,7 +44,7 @@
     autoplay: 2500,
     loop: true
   })
-  </script>
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

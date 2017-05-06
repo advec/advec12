@@ -1,37 +1,32 @@
 layout: index
 ---
 
-//
-// Swiper
-// --------------------------------------------------
-section.slider      
-  .swiper-container
-    .swiper-container__block
-      .swiper-container__block__title
+.swiper      
+  .swiper__container
+    .swiper__container__block
+      .swiper__container__block__title
         h1 Somos Um
         
-      .swiper-container__block__button
+      .swiper__container__block__button
         a(href="/programacao/").btn.btn--white Novo por aqui?
         a(href="http://advec.churchonline.org").btn.btn--aovivo Assista ao vivo
       
     .swiper-wrapper
       .swiper-slide
         video(autoplay="autoplay" loop="loop" muted="muted" src="assets/videos/bg-home-1.mp4")
+        
+      .swiper-slide
+        video(autoplay="autoplay" loop="loop" muted="muted" src="assets/videos/bg-home-1.mp4")
 
-// Bem vindo
-// --------------------------------------------------
 section.bemvindo
   .bemvindo__container
     .bemvindo__container__block
       .bemvindo__container__block__text
-        h2 Seja bem vindo, sua presença nos enche de alegria e satisfação. Venha mais vezes!
+        h2 Seja bem vindo, sua presença nos enche de alegria e satisfação.
       
       .bemvindo__container__block__button
-        a(href="/filiais/").btn.btn--orange Perto de você
-      
-//
-// prsilas
-// --------------------------------------------------
+        a(href="/filiais/").btn.btn--orange Nossas igrejas
+
 section.prsilas
   .prsilas__block
     .prsilas__block__container
@@ -43,9 +38,6 @@ section.prsilas
         .prsilas__block__container__col__button
           a(href="/pr-silas-malafaia/").btn.btn--white Conheça
           
-//
-// EBD
-// --------------------------------------------------
 section.ebd
   .ebd__background
   .ebd__block
@@ -58,9 +50,6 @@ section.ebd
         .ebd__block__container__col__button
           a(href="/programacao/").btn.btn--red Programação
 
-//
-// Batismo
-// --------------------------------------------------
 section.batismo
   .batismo__block
     .batismo__block__container
@@ -72,9 +61,6 @@ section.batismo
         .batismo__block__container__col__button
           a(href="/batismo/").btn.btn--white Seja um
 
-//
-// Departamentos
-// --------------------------------------------------
 section.departamento
   .departamento__background
   .departamento__block
@@ -87,9 +73,6 @@ section.departamento
         .departamento__block__container__col__button
           a(href="/fazer-parte/").btn.btn--black Fazer Parte
           
-//
-// Doe
-// --------------------------------------------------
 section.doe
   .doe__block
     .doe__block__container
@@ -101,19 +84,6 @@ section.doe
         .doe__block__container__col__button
           a(href="/dizimos-e-ofertas/").btn.btn--white Doe Online
 
-//
-// Bar | Recadastro membros
-// --------------------------------------------------
-//.bar
-//  .bar__container
-//    .bar__container__title
-//      h3 Você é membro?
-//    .bar__container__button
-//     a(href="#").btn.btn--white Recadastro de membros
-
-//
-// Oração
-// --------------------------------------------------
 section.oracao
   .oracao__container
     .oracao__container__col
@@ -122,12 +92,9 @@ section.oracao
       .oracao__container__col__text
           p Fique a vontade para fazer seu pedido. Nós vamos orar por você.
       .oracao__container__col__button
-        a(href="#").btn.btn--black
+        a(href="/pedido-de-oracao/").btn.btn--black
           | Fazer pedido
           
-//
-// Useful
-// --------------------------------------------------
 section.useful
   .useful__row
     .useful__row__item
